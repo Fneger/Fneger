@@ -1,0 +1,11 @@
+currentDatabaseConnections
+TerminateMe
+DatabaseResource
+on_finishedThread call:[QString,arg,close,contains,database,isOpen,keys,locker,qDebug,remove,removeDatabase,sender,tr] noreturn:[close,remove]
+databse call:[QSqlDatabase,QString,addDatabase,addSecs,arg,close,connect,connectionNames,contains,currentDateTime,currentThread,database,evt_Message,exec,insert,isOpen,lastError,length,locker,open,prepare,qCritical,qDebug,qWarning,query,remove,removeDatabase,setDatabaseName,setHostName,setPassword,setPort,setUserName,text,tr,type] noreturn:[QSqlDatabase,connect,currentDateTime,remove,setPassword]
+remove_connections call:[currentDatabaseConnections,keys,locker,remove_connection] noreturn:[currentDatabaseConnections,remove_connection]
+remove_connection call:[RemoveTreadsConnections,clear,close,contains,database,evt_Message,isOpen,locker,qDebug,qWarning,remove,removeDatabase,tr] noreturn:[clear,close,evt_Message,remove]
+RemoveTreadsConnections call:[close,contains,database,isOpen,keys,qDebug,remove,removeDatabase,tr] noreturn:[close,remove]
+addConnection call:[QString,addDatabase,arg,close,contains,database,evt_Message,isOpen,lastError,locker,open,qCritical,qDebug,removeDatabase,setConnectOptions,setDatabaseName,setHostName,setPassword,setPort,setUserName,text,tr] noreturn:[close]
+confirmConnection call:[addDatabase,close,connectionNames,contains,database,evt_Message,exec,isOpen,lastError,length,locker,open,qCritical,qDebug,qWarning,query,removeDatabase,setConnectOptions,setDatabaseName,setHostName,setPassword,setPort,setUserName,text,tr,type]
+run call:[confirmConnection,currentDatabaseConnections,currentThread,keys,locker,msleep] noreturn:[currentDatabaseConnections,msleep]

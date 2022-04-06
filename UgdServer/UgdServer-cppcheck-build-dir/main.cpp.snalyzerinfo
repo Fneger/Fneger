@@ -1,0 +1,30 @@
+TcpAbstractSocket
+TcpAbstractSocket
+write call:[data,sendData,size] noreturn:[sendData]
+write call:[sendData] noreturn:[sendData]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+socketDescriptor
+errorCode
+erro
+state
+peerIp
+peerPort
+haveErro call:[clear,haveErro,setState] noreturn:[haveErro]
+hostConnected call:[hostConnected] noreturn:[hostConnected]
+haveErro call:[disConnected,erroString,stateChange] noreturn:[disConnected]
+hostConnected call:[connected,setState,stateChange] noreturn:[connected]
+readDataed call:[QByteArray,sentReadData]
+writeDataed call:[bytesWritten] noreturn:[bytesWritten]
+finedHosted call:[hostFinded,setState] noreturn:[hostFinded]
+heartTimeOut
+handshaked
+setState
+setSocketPtr
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+zp_plTaskBase
+currentDatabaseConnections
+TerminateMe
+stMessageOutput global:[g_logger] call:[MessageOutput] noreturn:[MessageOutput]
+main global:[g_logger] call:[a,applicationName,attach,create,exec,qInstallMessageHandler,setApplicationName,setLogLevel,setLogger,setWindowTitle,setZPMainFrame,shared,show,startStop,tr,warning] noreturn:[exec]

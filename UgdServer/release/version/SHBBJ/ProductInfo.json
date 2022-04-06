@@ -1,0 +1,32 @@
+{
+    "SHBBJ": {
+        "CrcDefaultVersion": {
+            "Date": "",
+            "FileName": "",
+            "FileSize": "334212958",
+            "IsDefault": false,
+            "Message": "",
+            "Name": ""
+        },
+        "CrcVersionList": [
+        ],
+        "Date": "2021/08/02 10:35:38",
+        "GroupFileDefaultVersion": {
+            "Date": "",
+            "FileInfos": [
+            ],
+            "IsDefault": false,
+            "Message": "",
+            "Name": "",
+            "SavePath": ""
+        },
+        "GroupFileInfos": [
+        ],
+        "McuInfos": [
+        ],
+        "ProductDesp": "SHBBJ",
+        "ProductName": "SHBBJ",
+        "ProductTypeId": "0",
+        "SaveFilePath": "./version/SHBBJ/"
+    }
+}

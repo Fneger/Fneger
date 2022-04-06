@@ -1,0 +1,42 @@
+zp_plTaskBase
+TcpAbstractSocket
+TcpAbstractSocket
+write call:[data,sendData,size] noreturn:[sendData]
+write call:[sendData] noreturn:[sendData]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+socketDescriptor
+errorCode
+erro
+state
+peerIp
+peerPort
+haveErro call:[clear,haveErro,setState] noreturn:[haveErro]
+hostConnected call:[hostConnected] noreturn:[hostConnected]
+haveErro call:[disConnected,erroString,stateChange] noreturn:[disConnected]
+hostConnected call:[connected,setState,stateChange] noreturn:[connected]
+readDataed call:[QByteArray,sentReadData]
+writeDataed call:[bytesWritten] noreturn:[bytesWritten]
+finedHosted call:[hostFinded,setState] noreturn:[hostFinded]
+heartTimeOut
+handshaked
+setState
+setSocketPtr
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+zp_ClusterNode call:[currentDateTime]
+clientNums
+lastActiveTime
+termName
+addrLAN
+portLAN
+addrPub
+portPub
+sock
+run call:[assert,begin,empty,filter_message,isEmpty,isNull,lock,pop_front,size,unlock] noreturn:[assert,begin,pop_front,unlock]
+push_new_data call:[currentDateTime,lock,push_back,size,unlock]
+filter_message call:[QByteArray,arg,arrCpy,constData,deal_current_message_block,evt_Message,evt_close_client,length,memcpy,push_back,sizeof,sock,tr] noreturn:[evt_close_client,memcpy]
+deal_current_message_block call:[BroadcastServers,QByteArray,QHostAddress,SvrNodeFromName,addrToConnectTo,arg,arraySend,clear,constData,deal_user_data,evt_Message,evt_NewSvrConnected,evt_close_client,evt_connect_to,name,regisitNewServer,size,sizeof,sock,strName,termName,tr] noreturn:[BroadcastServers,QByteArray,evt_Message,evt_close_client,evt_connect_to]
+deal_user_data call:[evt_RemoteData_recieved,termName]
+CheckHeartBeating call:[QString,arg,currentDateTime,evt_Message,evt_close_client,heartBeatingThrdHold,secsTo,sock,tr] noreturn:[evt_close_client]
+SendHelloPackage call:[LANAddr,LANPort,PublishAddr,PublishPort,array,c_str,data,evt_SendDataToClient,name,sizeof,sock,strncpy,toStdString,toString] noreturn:[evt_SendDataToClient]

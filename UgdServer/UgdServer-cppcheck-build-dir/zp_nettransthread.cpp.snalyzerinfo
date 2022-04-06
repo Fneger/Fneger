@@ -1,0 +1,49 @@
+TcpAbstractSocket
+TcpAbstractSocket
+write call:[data,sendData,size] noreturn:[sendData]
+write call:[sendData] noreturn:[sendData]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+socketDescriptor
+errorCode
+erro
+state
+peerIp
+peerPort
+haveErro call:[clear,haveErro,setState] noreturn:[haveErro]
+hostConnected call:[hostConnected] noreturn:[hostConnected]
+haveErro call:[disConnected,erroString,stateChange] noreturn:[disConnected]
+hostConnected call:[connected,setState,stateChange] noreturn:[connected]
+readDataed call:[QByteArray,sentReadData]
+writeDataed call:[bytesWritten] noreturn:[bytesWritten]
+finedHosted call:[hostFinded,setState] noreturn:[hostFinded]
+heartTimeOut
+handshaked
+setState
+setSocketPtr
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+zp_netTransThread call:[assert] noreturn:[assert]
+Empty_RabishCan call:[begin,clear,deleteLater,end,lock,unlock] noreturn:[unlock]
+isActive
+SSLConnection
+SetSSLConnection
+Deactivate
+clientsList call:[lock,unlock,values]
+CurrentClients call:[lock,size,unlock]
+DeactivateImmediately call:[KickAllClients] noreturn:[KickAllClients]
+SetPayload call:[assert] noreturn:[assert]
+push_to_rabish_can call:[autoLock,contains,currentSecsSinceEpoch,insert,qDebug,size] noreturn:[insert]
+KickRabishCanTimeOutObj call:[autoLock,begin,contains,currentSecsSinceEpoch,deleteLater,end,erase,remove,size] noreturn:[erase,remove]
+incomingConnection call:[QAsioTcpsocket,arg,connect,contains,do_start,evt_NewClientConnected,insert,lock,peerIp,peerPort,push_to_rabish_can,qDebug,tr,unlock] noreturn:[evt_NewClientConnected,push_to_rabish_can]
+startConnection call:[QTcpSocket,assert,connect,connectToHost,insert,lock,unlock] noreturn:[assert,connectToHost]
+on_connected call:[QString,arg,contains,evt_Message,evt_NewClientConnected,peerIp,peerPort,qDebug,sender,tr] noreturn:[arg]
+on_encrypted call:[arg,contains,evt_ClientEncrypted,peerAddress,peerPort,qDebug,sender,toString,tr] noreturn:[arg]
+client_closed call:[QString,arg,contains,disconnect,disconnectFromHost,erase,evt_ClientDisconnected,evt_Message,lock,push_to_rabish_can,qDebug,remove,sender,tr,unlock] noreturn:[push_to_rabish_can]
+new_data_recieved global:[g_bytesRecieved,g_mutex_sta,g_secRecieved] call:[contains,evt_Data_recieved,lock,sender,size,unlock] noreturn:[evt_Data_recieved]
+some_data_sended global:[g_bytesSent,g_mutex_sta,g_secSent] call:[assert,begin,constData,contains,empty,evt_Data_transferred,lock,pop_front,qMin,sender,size,unlock,write] noreturn:[pop_front]
+displayError call:[QString,arg,contains,disconnect,disconnectFromHost,erase,erro,evt_ClientDisconnected,evt_Message,evt_SocketError,lock,peerIp,peerPort,push_to_rabish_can,qDebug,remove,sender,tr,unlock] noreturn:[push_to_rabish_can]
+SendDataToClient call:[constData,contains,empty,lock,push_back,qMin,size,unlock,write] noreturn:[push_back]
+KickAllClients call:[disconnectFromHost,lock,unlock,values] noreturn:[disconnectFromHost]
+KickClient call:[contains,disconnectFromHost,lock,unlock] noreturn:[disconnectFromHost]
+CanExit call:[CurrentClients]

@@ -1,0 +1,171 @@
+﻿  Uic'ing dialogaddressinput.ui...
+  Uic'ing zpmainframe.ui...
+  Moc'ing ZoomPipeline\asio\casiotcpserver.h...
+  Moc'ing ZoomPipeline\asio\casiotcpsocket.h...
+  Moc'ing ZoomPipeline\asio\ctcpabstractsocket.h...
+  Moc'ing ZoomPipeline\database\databaseresource.h...
+  Moc'ing ZoomPipeline\database\databasetool.h...
+  Moc'ing dialogaddressinput.h...
+  Moc'ing ZoomPipeline\smartlink\st_client_event.h...
+  Moc'ing ZoomPipeline\smartlink\st_client_table.h...
+  Moc'ing ZoomPipeline\smartlink\st_clientnode_applayer.h...
+  Moc'ing ZoomPipeline\smartlink\st_clientnode_basetrans.h...
+  Moc'ing ZoomPipeline\logger\st_logger.h...
+  Moc'ing ZoomPipeline\cluster\zp_clusternode.h...
+  Moc'ing ZoomPipeline\cluster\zp_clusterterm.h...
+  Moc'ing ZoomPipeline\network\zp_net_threadpool.h...
+  Moc'ing ZoomPipeline\network\zp_netlistenthread.h...
+  Moc'ing ZoomPipeline\network\zp_nettransthread.h...
+  Moc'ing ZoomPipeline\pipeline\zp_pipeline.h...
+  Moc'ing ZoomPipeline\pipeline\zp_pltaskbase.h...
+  Moc'ing ZoomPipeline\pipeline\zp_plworkingthread.h...
+  Moc'ing ZoomPipeline\network\zp_tcpclient.h...
+  Moc'ing ZoomPipeline\network\zp_tcpserver.h...
+  Moc'ing zpmainframe.h...
+  casiolisten.cpp
+  casiotcpserver.cpp
+  casiotcpsocket.cpp
+  csocketsession.cpp
+  ctcpabstractsocket.cpp
+  databaseresource.cpp
+  databasetool.cpp
+  dialogaddressinput.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\ctcpabstractsocket.cpp(42): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  main.cpp
+  st_client_event.cpp
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\database\databasetool.cpp(1190): warning C4100: “extTableName”: 未引用的形参
+  st_client_file.cpp
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  st_client_protocol.cpp
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\ioserviceclass.h(35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据 (编译源文件 ZoomPipeline\asio\casiotcpsocket.cpp)
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\ioserviceclass.h(35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据 (编译源文件 ZoomPipeline\asio\casiolisten.cpp)
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\casiotcpsocket.cpp(101): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\ioserviceclass.h(35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据 (编译源文件 ZoomPipeline\asio\casiotcpserver.cpp)
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\casiotcpserver.cpp(30): warning C4100: “value”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\casiotcpserver.cpp(30): warning C4100: “isEnble”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\casiotcpserver.cpp(30): warning C4100: “option”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\casiotcpserver.cpp(52): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  st_client_table.cpp
+  st_clientnode_applayer.cpp
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\smartlink\st_client_protocol.cpp(63): warning C4267: “+=”: 从“size_t”转换到“uint16_t”，可能丢失数据
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\smartlink\st_client_protocol.cpp(96): warning C4333: “>>”: 右移位数过大，数据将丢失
+  st_clientnode_basetrans.cpp
+  st_global_def.cpp
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\smartlink\st_client_table.cpp(19): warning C4100: “pCluster”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\smartlink\st_client_table.cpp(331): warning C4100: “bActive”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\smartlink\st_client_table.cpp(331): warning C4100: “uuid”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\smartlink\st_client_table.cpp(388): warning C4100: “parent”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\smartlink\st_client_table.cpp(387): warning C4100: “psock”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\smartlink\st_client_table.cpp(386): warning C4100: “pTerm”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\smartlink\st_client_table.cpp(460): warning C4100: “pnPort”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\smartlink\st_client_table.cpp(460): warning C4100: “bufAddresses”: 未引用的形参
+  st_logger.cpp
+  st_message.cpp
+  st_packet_tool.cpp
+  zp_clusternode.cpp
+  zp_clusterterm.cpp
+  zp_net_threadpool.cpp
+  zp_netlistenthread.cpp
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\logger\st_logger.cpp(74): warning C4100: “context”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\cluster\zp_clusterterm.cpp(521): warning C4018: “<”: 有符号/无符号不匹配
+  zp_nettransthread.cpp
+  zp_pipeline.cpp
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  zp_pltaskbase.cpp
+  zp_plworkingthread.cpp
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\network\zp_net_threadpool.cpp(79): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\network\zp_net_threadpool.cpp(88): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\network\zp_net_threadpool.cpp(97): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\network\zp_net_threadpool.cpp(192): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\network\zp_net_threadpool.cpp(472): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  zp_tcpclient.cpp
+  zp_tcpserver.cpp
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\pipeline\zp_pipeline.cpp(124): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\pipeline\zp_pipeline.cpp(152): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  zpmainframe.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\network\zp_tcpclient.cpp(18): warning C4100: “wsended”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\ioserviceclass.h(35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据 (编译源文件 ZoomPipeline\network\zp_netlistenthread.cpp)
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\network\zp_nettransthread.cpp(303): warning C4100: “extraData”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\network\zp_nettransthread.cpp(303): warning C4100: “port”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\network\zp_nettransthread.cpp(303): warning C4100: “addr”: 未引用的形参
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\ioserviceclass.h(35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据 (编译源文件 ZoomPipeline\network\zp_tcpserver.cpp)
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\ioserviceclass.h(35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据 (编译源文件 zpmainframe.cpp)
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  qrc_resource.cpp
+  moc_casiotcpserver.cpp
+  moc_casiotcpsocket.cpp
+  moc_ctcpabstractsocket.cpp
+  moc_databaseresource.cpp
+  moc_databasetool.cpp
+  moc_dialogaddressinput.cpp
+  moc_st_client_event.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  moc_st_client_table.cpp
+  moc_st_clientnode_applayer.cpp
+  moc_st_clientnode_basetrans.cpp
+  moc_st_logger.cpp
+  moc_zp_clusternode.cpp
+  moc_zp_clusterterm.cpp
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\ioserviceclass.h(35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据 (编译源文件 Release\moc_casiotcpserver.cpp)
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  moc_zp_net_threadpool.cpp
+  moc_zp_netlistenthread.cpp
+  moc_zp_nettransthread.cpp
+  moc_zp_pipeline.cpp
+  moc_zp_pltaskbase.cpp
+  moc_zp_plworkingthread.cpp
+  moc_zp_tcpclient.cpp
+  moc_zp_tcpserver.cpp
+  moc_zpmainframe.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+e:\share\qt-project\mdvrugd\bsd_mdvr_ugd\ugdserver\zoompipeline\asio\ioserviceclass.h(35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据 (编译源文件 Release\moc_zp_tcpserver.cpp)
+  e:\boost_1_77_0\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  UgdServer.vcxproj -> E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\release\UgdServer.exe

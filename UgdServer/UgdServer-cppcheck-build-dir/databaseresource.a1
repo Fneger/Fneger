@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3034943104">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="on_finishedThread" lineNumber="17"/>
+    <functiondecl functionName="databse" lineNumber="52"/>
+    <functiondecl functionName="remove_connections" lineNumber="193"/>
+    <functiondecl functionName="remove_connection" lineNumber="207"/>
+    <functiondecl functionName="RemoveTreadsConnections" lineNumber="231"/>
+    <functiondecl functionName="addConnection" lineNumber="271"/>
+    <functiondecl functionName="confirmConnection" lineNumber="340"/>
+    <functiondecl functionName="run" lineNumber="434"/>
+    <functioncall functionName="DatabaseResource"/>
+    <functioncall functionName="ExtraOptions"/>
+    <functioncall functionName="HostAddr"/>
+    <functioncall functionName="Pass"/>
+    <functioncall functionName="QDateTime"/>
+    <functioncall functionName="QSqlDatabase"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="QThread"/>
+    <functioncall functionName="RemoveTreadsConnections"/>
+    <functioncall functionName="User"/>
+    <functioncall functionName="addDatabase"/>
+    <functioncall functionName="addSecs"/>
+    <functioncall functionName="arg"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="close"/>
+    <functioncall functionName="confirmConnection"/>
+    <functioncall functionName="connName"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="connectionNames"/>
+    <functioncall functionName="contains"/>
+    <functioncall functionName="currentDatabaseConnections"/>
+    <functioncall functionName="currentDateTime"/>
+    <functioncall functionName="currentThread"/>
+    <functioncall functionName="database"/>
+    <functioncall functionName="db"/>
+    <functioncall functionName="dbName"/>
+    <functioncall functionName="evt_Message"/>
+    <functioncall functionName="exec"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="finished"/>
+    <functioncall functionName="foreach"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="isOpen"/>
+    <functioncall functionName="keys"/>
+    <functioncall functionName="lastError"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="locker"/>
+    <functioncall functionName="m_mutex_reg"/>
+    <functioncall functionName="mainName"/>
+    <functioncall functionName="msg"/>
+    <functioncall functionName="msleep"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="on_finishedThread"/>
+    <functioncall functionName="open"/>
+    <functioncall functionName="pThread"/>
+    <functioncall functionName="para"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="port"/>
+    <functioncall functionName="prepare"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="qCritical"/>
+    <functioncall functionName="qDebug"/>
+    <functioncall functionName="qWarning"/>
+    <functioncall functionName="qobject_cast"/>
+    <functioncall functionName="query"/>
+    <functioncall functionName="quint64"/>
+    <functioncall functionName="remove"/>
+    <functioncall functionName="removeDatabase"/>
+    <functioncall functionName="remove_connection"/>
+    <functioncall functionName="sender"/>
+    <functioncall functionName="setConnectOptions"/>
+    <functioncall functionName="setDatabaseName"/>
+    <functioncall functionName="setHostName"/>
+    <functioncall functionName="setPassword"/>
+    <functioncall functionName="setPort"/>
+    <functioncall functionName="setUserName"/>
+    <functioncall functionName="sethreadNames"/>
+    <functioncall functionName="str"/>
+    <functioncall functionName="strDBName"/>
+    <functioncall functionName="tagConnectionPara"/>
+    <functioncall functionName="testSQL"/>
+    <functioncall functionName="text"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="threadName"/>
+    <functioncall functionName="tr"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="type"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

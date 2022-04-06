@@ -1,0 +1,4 @@
+ZP_TcpClient call:[SIGNAL,SLOT,assert,bytesWritten,connect,some_data_sended] noreturn:[connect]
+ZP_TcpClient
+some_data_sended call:[assert,begin,constData,empty,pop_front,qMin,size,write] noreturn:[pop_front]
+SendData call:[constData,empty,push_back,qMin,size,write] noreturn:[push_back]

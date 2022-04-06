@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.6"/>
+    <errors>
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to evaluate #if condition" verbose="failed to evaluate #if condition" sinceDate="2022/1/24">
+            <location file="..\..\..\..\..\boost_1_77_0\boost\config\detail\select_stdlib_config.hpp" line="19"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;QAsioTcpsocket&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;QAsioTcpsocket&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="main.cpp" sinceDate="2022/1/24">
+            <location file="QAsioSocket\include\qasiotcpsocket.h" line="13"/>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;disconnectFromHost&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;disconnectFromHost&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="main.cpp" sinceDate="2022/1/24">
+            <location file="QAsioSocket\include\qasiotcpsocket.h" line="21" info="Function in derived class"/>
+            <location file="QAsioSocket\include\tcpabstractsocket.h" line="53" info="Virtual function in base class"/>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;setSocketOption&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;setSocketOption&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="main.cpp" sinceDate="2022/1/24">
+            <location file="QAsioSocket\include\qasiotcpsocket.h" line="23" info="Function in derived class"/>
+            <location file="QAsioSocket\include\tcpabstractsocket.h" line="62" info="Virtual function in base class"/>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;getSocketOption&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;getSocketOption&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="main.cpp" sinceDate="2022/1/24">
+            <location file="QAsioSocket\include\qasiotcpsocket.h" line="25" info="Function in derived class"/>
+            <location file="QAsioSocket\include\tcpabstractsocket.h" line="64" info="Virtual function in base class"/>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;hostConnected&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;hostConnected&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="main.cpp" sinceDate="2022/1/24">
+            <location file="QAsioSocket\include\qasiotcpsocket.h" line="31" info="Function in derived class"/>
+            <location file="QAsioSocket\include\tcpabstractsocket.h" line="107" info="Virtual function in base class"/>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;sendData&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;sendData&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="main.cpp" sinceDate="2022/1/24">
+            <location file="QAsioSocket\include\qasiotcpsocket.h" line="32" info="Function in derived class"/>
+            <location file="QAsioSocket\include\tcpabstractsocket.h" line="85" info="Virtual function in base class"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;m_uuid&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;m_uuid&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="ZoomPipeline/smartlink/st_clientnode_basetrans.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="15"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;m_lastReportSec&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;m_lastReportSec&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="ZoomPipeline/smartlink/st_clientnode_basetrans.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="18"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;rc&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;rc&amp;#039; is assigned a value that is never used." cwe="563" file0="ZoomPipeline/smartlink/st_clientnode_basetrans.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="131"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;retlen&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;retlen&amp;#039; is assigned a value that is never used." cwe="563" file0="ZoomPipeline/smartlink/st_clientnode_basetrans.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="132"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;rc&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;rc&amp;#039; is assigned a value that is never used." cwe="563" file0="ZoomPipeline/smartlink/st_clientnode_basetrans.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="158"/>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;run&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;run&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="ZoomPipeline/smartlink/st_clientnode_basetrans.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_clientnode_basetrans.h" line="29" info="Function in derived class"/>
+            <location file="ZoomPipeline\pipeline\zp_pltaskbase.h" line="25" info="Virtual function in base class"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;dtmCur&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;dtmCur&amp;#039; is assigned a value that is never used." cwe="563" file0="ZoomPipeline/logger/st_logger.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\logger\st_logger.cpp" line="42"/>
+        </error>
+        <error id="unsignedLessThanZero" severity="style" msg="Checking if unsigned expression &amp;#039;strLen&amp;#039; is less than zero." verbose="The unsigned expression &amp;#039;strLen&amp;#039; will never be negative so it is either pointless or an error to check if it is." cwe="570" file0="ZoomPipeline/smartlink/st_packet_tool.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_packet_tool.cpp" line="26"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;bcd&amp;#039; can be declared with const" verbose="Parameter &amp;#039;bcd&amp;#039; can be declared with const" cwe="398" file0="ZoomPipeline/smartlink/st_packet_tool.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_packet_tool.cpp" line="6"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;ptr&amp;#039; can be declared with const" verbose="Parameter &amp;#039;ptr&amp;#039; can be declared with const" cwe="398" file0="ZoomPipeline/smartlink/st_packet_tool.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_packet_tool.cpp" line="120"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;ptr&amp;#039; can be declared with const" verbose="Parameter &amp;#039;ptr&amp;#039; can be declared with const" cwe="398" file0="ZoomPipeline/smartlink/st_packet_tool.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_packet_tool.cpp" line="48"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;byteHigh&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;byteHigh&amp;#039; is assigned a value that is never used." cwe="563" file0="ZoomPipeline/smartlink/st_packet_tool.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_packet_tool.cpp" line="23"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;byteLow&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;byteLow&amp;#039; is assigned a value that is never used." cwe="563" file0="ZoomPipeline/smartlink/st_packet_tool.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_packet_tool.cpp" line="24"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;dstr&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;dstr&amp;#039; is assigned a value that is never used." cwe="563" file0="ZoomPipeline/smartlink/st_packet_tool.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\smartlink\st_packet_tool.cpp" line="135"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;m_last_Report&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;m_last_Report&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="ZoomPipeline/cluster/zp_clusternode.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\cluster\zp_clusternode.cpp" line="14"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="ZoomPipeline/cluster/zp_clusternode.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\cluster\zp_clusternode.cpp" line="245"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="ZoomPipeline/cluster/zp_clusternode.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\cluster\zp_clusternode.cpp" line="367"/>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;run&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;run&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="ZoomPipeline/cluster/zp_clusternode.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\cluster\zp_clusternode.h" line="21" info="Function in derived class"/>
+            <location file="ZoomPipeline\pipeline\zp_pltaskbase.h" line="25" info="Virtual function in base class"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="ZoomPipeline/cluster/zp_clusterterm.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\cluster\zp_clusterterm.cpp" line="419"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="ZoomPipeline/cluster/zp_clusterterm.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\cluster\zp_clusterterm.cpp" line="467"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="ZoomPipeline/cluster/zp_clusterterm.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\cluster\zp_clusterterm.cpp" line="486"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="ZoomPipeline/cluster/zp_clusterterm.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\cluster\zp_clusterterm.cpp" line="398"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="ZoomPipeline/network/zp_nettransthread.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\network\zp_nettransthread.cpp" line="185"/>
+        </error>
+        <error id="unsignedLessThanZero" severity="style" msg="Checking if unsigned expression &amp;#039;m_rabish_can.size()&amp;#039; is less than zero." verbose="The unsigned expression &amp;#039;m_rabish_can.size()&amp;#039; will never be negative so it is either pointless or an error to check if it is." cwe="570" file0="ZoomPipeline/network/zp_nettransthread.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\network\zp_nettransthread.cpp" line="150"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;ZP_TcpClient&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;ZP_TcpClient&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="ZoomPipeline/network/zp_tcpclient.cpp" sinceDate="2022/1/24">
+            <location file="ZoomPipeline\network\zp_tcpclient.h" line="11"/>
+        </error>
+    </errors>
+</results>

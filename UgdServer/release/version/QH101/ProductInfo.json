@@ -1,0 +1,72 @@
+{
+    "QH101": {
+        "CrcDefaultVersion": {
+            "Date": "2021/09/26 20:00:19",
+            "FileName": "DVR-T21092692-QH101.6423-ENG.crc",
+            "FileSize": "15767716",
+            "IsDefault": true,
+            "Message": "",
+            "Name": "DVR-T21092692-QH101.6423-ENG.crc"
+        },
+        "CrcVersionList": [
+            {
+                "Date": "2021/08/25 16:41:39",
+                "FileName": "DVR-T21082560-QH101.6182-CH.crc",
+                "FileSize": "15997124",
+                "IsDefault": false,
+                "Message": "添加web端版本管理",
+                "Name": "DVR-T21082560-QH101.6182-CH.crc"
+            },
+            {
+                "Date": "2021/09/15 18:39:07",
+                "FileName": "DVR-T21091591-QH101.6339-ENG.crc",
+                "FileSize": "15759724",
+                "IsDefault": false,
+                "Message": "",
+                "Name": "DVR-T21091591-QH101.6339-ENG.crc"
+            },
+            {
+                "Date": "2021/09/15 17:51:32",
+                "FileName": "DVR-T21091592-QH101.6339-ENG.crc",
+                "FileSize": "15759724",
+                "IsDefault": false,
+                "Message": "测试ubootGUI",
+                "Name": "DVR-T21091592-QH101.6339-ENG.crc"
+            },
+            {
+                "Date": "2021/09/26 20:00:19",
+                "FileName": "DVR-T21092692-QH101.6423-ENG.crc",
+                "FileSize": "15767716",
+                "IsDefault": true,
+                "Message": "",
+                "Name": "DVR-T21092692-QH101.6423-ENG.crc"
+            },
+            {
+                "Date": "2021/09/29 14:41:39",
+                "FileName": "DVR-T21092991-QH101.6423-ENG.crc",
+                "FileSize": "15767716",
+                "IsDefault": false,
+                "Message": "1.修复在远程升级界面点击保存会触发升级BUG\n2.增加webserver服务端进程监控，防止服务端挂掉后无法访问web",
+                "Name": "DVR-T21092991-QH101.6423-ENG.crc"
+            }
+        ],
+        "Date": "2021/08/25 15:23:57",
+        "GroupFileDefaultVersion": {
+            "Date": "",
+            "FileInfos": [
+            ],
+            "IsDefault": false,
+            "Message": "",
+            "Name": "",
+            "SavePath": ""
+        },
+        "GroupFileInfos": [
+        ],
+        "McuInfos": [
+        ],
+        "ProductDesp": "QH101",
+        "ProductName": "QH101",
+        "ProductTypeId": "0",
+        "SaveFilePath": "./version/QH101/"
+    }
+}

@@ -1,0 +1,9 @@
+st_client_event
+Instance call:[lock,unlock]
+AddClientEvent call:[RemoveClientEvent,lock,unlock] noreturn:[unlock]
+RemoveClientEvent call:[end,erase,find,lock,unlock]
+RemoveClientAllEvent call:[clear,lock,unlock] noreturn:[unlock]
+GetUuidEvents call:[lock,unlock]
+GetTerminalEvents call:[lock,unlock]
+GetEventStatus call:[end,find,lock,unlock]
+SetEventStatus call:[end,find,lock,unlock] noreturn:[unlock]

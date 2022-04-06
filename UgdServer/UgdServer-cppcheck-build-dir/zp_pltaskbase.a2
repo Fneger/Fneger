@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3421689032">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="addRef" lineNumber="10"/>
+    <functiondecl functionName="delRef" lineNumber="17"/>
+    <functiondecl functionName="ref" lineNumber="25"/>
+    <functiondecl functionName="LockRun" lineNumber="31"/>
+    <functiondecl functionName="UnlockRun" lineNumber="36"/>
+    <functiondecl functionName="updateActiveTime" lineNumber="41"/>
+    <functiondecl functionName="activeTime" lineNumber="47"/>
+    <functioncall functionName="QObject"/>
+    <functioncall functionName="currentSecsSinceEpoch"/>
+    <functioncall functionName="locker"/>
+    <functioncall functionName="m_mutex_activeTime"/>
+    <functioncall functionName="m_mutex_ref"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="tryLock"/>
+    <functioncall functionName="unlock"/>
+    <functioncall functionName="updateActiveTime"/>
+    <functioncall functionName="zp_plTaskBase"/>
+  </FileInfo>
+</analyzerinfo>

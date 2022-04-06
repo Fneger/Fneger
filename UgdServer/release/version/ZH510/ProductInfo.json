@@ -1,0 +1,72 @@
+{
+    "ZH510": {
+        "CrcDefaultVersion": {
+            "Date": "2021/08/20 15:25:43",
+            "FileName": "DVR-T21082091-ZH510.000-CH.crc",
+            "FileSize": "14212284",
+            "IsDefault": true,
+            "Message": "",
+            "Name": "DVR-T21082091-ZH510.000-CH.crc"
+        },
+        "CrcVersionList": [
+            {
+                "Date": "2021/07/29 17:55:35",
+                "FileName": "DVR-T21072664-ZH510.5989-CH.crc",
+                "FileSize": "18228968",
+                "IsDefault": false,
+                "Message": "",
+                "Name": "DVR-T21072664-ZH510.5989-CH.crc"
+            },
+            {
+                "Date": "2021/07/29 17:24:56",
+                "FileName": "DVR-T21072862-ZH510.5989-CH.crc",
+                "FileSize": "13556924",
+                "IsDefault": false,
+                "Message": "",
+                "Name": "DVR-T21072862-ZH510.5989-CH.crc"
+            },
+            {
+                "Date": "2021/08/06 15:40:37",
+                "FileName": "DVR-T21080361-ZH510.5989-CH.crc",
+                "FileSize": "13552828",
+                "IsDefault": false,
+                "Message": "",
+                "Name": "DVR-T21080361-ZH510.5989-CH.crc"
+            },
+            {
+                "Date": "2021/08/06 16:28:06",
+                "FileName": "DVR-T21080661-ZH510.5989-CH.crc",
+                "FileSize": "13552828",
+                "IsDefault": false,
+                "Message": "",
+                "Name": "DVR-T21080661-ZH510.5989-CH.crc"
+            },
+            {
+                "Date": "2021/08/20 15:25:43",
+                "FileName": "DVR-T21082091-ZH510.000-CH.crc",
+                "FileSize": "14212284",
+                "IsDefault": true,
+                "Message": "",
+                "Name": "DVR-T21082091-ZH510.000-CH.crc"
+            }
+        ],
+        "Date": "2021/07/14 10:47:47",
+        "GroupFileDefaultVersion": {
+            "Date": "",
+            "FileInfos": [
+            ],
+            "IsDefault": true,
+            "Message": "",
+            "Name": "",
+            "SavePath": ""
+        },
+        "GroupFileInfos": [
+        ],
+        "McuInfos": [
+        ],
+        "ProductDesp": "",
+        "ProductName": "ZH510",
+        "ProductTypeId": "0",
+        "SaveFilePath": "./version/ZH510/"
+    }
+}

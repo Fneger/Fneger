@@ -1,0 +1,32 @@
+{
+    "ZH306": {
+        "CrcDefaultVersion": {
+            "Date": "",
+            "FileName": "",
+            "FileSize": "1686826844",
+            "IsDefault": false,
+            "Message": "",
+            "Name": ""
+        },
+        "CrcVersionList": [
+        ],
+        "Date": "2021/08/02 10:42:57",
+        "GroupFileDefaultVersion": {
+            "Date": "",
+            "FileInfos": [
+            ],
+            "IsDefault": false,
+            "Message": "",
+            "Name": "",
+            "SavePath": ""
+        },
+        "GroupFileInfos": [
+        ],
+        "McuInfos": [
+        ],
+        "ProductDesp": "ZH306",
+        "ProductName": "ZH306",
+        "ProductTypeId": "0",
+        "SaveFilePath": "./version/ZH306/"
+    }
+}

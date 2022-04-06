@@ -1,0 +1,45 @@
+TcpAbstractSocket
+TcpAbstractSocket
+write call:[data,sendData,size] noreturn:[sendData]
+write call:[sendData] noreturn:[sendData]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+socketDescriptor
+errorCode
+erro
+state
+peerIp
+peerPort
+haveErro call:[clear,haveErro,setState] noreturn:[haveErro]
+hostConnected call:[hostConnected] noreturn:[hostConnected]
+haveErro call:[disConnected,erroString,stateChange] noreturn:[disConnected]
+hostConnected call:[connected,setState,stateChange] noreturn:[connected]
+readDataed call:[QByteArray,sentReadData]
+writeDataed call:[bytesWritten] noreturn:[bytesWritten]
+finedHosted call:[hostFinded,setState] noreturn:[hostFinded]
+heartTimeOut
+handshaked
+setState
+setSocketPtr
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+zp_net_Engine call:[isRegistered,type]
+ListenerNames call:[keys] noreturn:[keys]
+TransThreadNum call:[size] noreturn:[size]
+TransThreadNum call:[SSLConnection,size]
+totalClients call:[CurrentClients,size] noreturn:[CurrentClients]
+AddListeningAddress call:[QString,QThread,connect,end,evt_Message,find,moveToThread,start,startListen,tr,zp_netListenThread] noreturn:[evt_Message,startListen]
+RemoveListeningAddress call:[end,find,stopListen] noreturn:[stopListen]
+RemoveAllAddresses call:[foreach,keys,stopListen] noreturn:[stopListen]
+on_New_Arrived_Client call:[CurrentClients,QString,SSLConnection,TransThreadDel,bSSLConn,evt_EstablishConnection,evt_Message,isActive,qCritical,qDebug,sender,size,tr] noreturn:[TransThreadDel,evt_EstablishConnection,tr]
+on_ListenClosed call:[deleteLater,disconnect,end,find,quit,remove,wait] noreturn:[deleteLater]
+AddClientTransThreads call:[QThread,SetSSLConnection,connect,moveToThread,push_back,start,zp_netTransThread] noreturn:[moveToThread]
+TransThreadDel call:[CanExit,Empty_RabishCan,deleteLater,disconnect,quit,remove,size,wait] noreturn:[remove]
+KickAllClients call:[evt_KickAll,size] noreturn:[evt_KickAll]
+DeactiveImmediately call:[evt_DeactivteImmediately,size] noreturn:[evt_DeactivteImmediately]
+KickRabishCanClient call:[evt_KickRabishCanClient] noreturn:[evt_KickRabishCanClient]
+RemoveClientTransThreads call:[CanExit,Deactivate,SSLConnection,size] noreturn:[CanExit]
+SendDataToClient call:[evt_SendDataToClient] noreturn:[evt_SendDataToClient]
+KickClients call:[evt_KickClient] noreturn:[evt_KickClient]
+CanExit call:[TransThreadDel,size] noreturn:[TransThreadDel]
+connectTo call:[CurrentClients,QString,SSLConnection,TransThreadDel,evt_FireConnection,evt_Message,isActive,size,tr] noreturn:[TransThreadDel,evt_FireConnection,evt_Message]

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="833007226">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;ZP_TcpClient&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;ZP_TcpClient&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/network/zp_tcpclient.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\network\zp_tcpclient.h" line="11" column="5"/>
+            <symbol>ZP_TcpClient</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="ZP_TcpClient" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/network/zp_tcpclient.h" line="6" col="1" hash="15056608867119191022"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="some_data_sended" lineNumber="18"/>
+    <functiondecl functionName="SendData" lineNumber="38"/>
+    <functioncall functionName="QByteArray"/>
+    <functioncall functionName="QTcpSocket"/>
+    <functioncall functionName="SIGNAL"/>
+    <functioncall functionName="SLOT"/>
+    <functioncall functionName="ZP_TcpClient"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="bytesWritten"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="constData"/>
+    <functioncall functionName="currentOffset"/>
+    <functioncall functionName="dtarray"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="m_nPayLoad"/>
+    <functioncall functionName="nPayLoad"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="pop_front"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="qMin"/>
+    <functioncall functionName="qint64"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="some_data_sended"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="write"/>
+  </FileInfo>
+</analyzerinfo>

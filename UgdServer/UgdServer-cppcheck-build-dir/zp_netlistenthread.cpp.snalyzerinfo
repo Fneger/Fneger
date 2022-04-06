@@ -1,0 +1,29 @@
+TcpAbstractSocket
+TcpAbstractSocket
+write call:[data,sendData,size] noreturn:[sendData]
+write call:[sendData] noreturn:[sendData]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+socketDescriptor
+errorCode
+erro
+state
+peerIp
+peerPort
+haveErro call:[clear,haveErro,setState] noreturn:[haveErro]
+hostConnected call:[hostConnected] noreturn:[hostConnected]
+haveErro call:[disConnected,erroString,stateChange] noreturn:[disConnected]
+hostConnected call:[connected,setState,stateChange] noreturn:[connected]
+readDataed call:[QByteArray,sentReadData]
+writeDataed call:[bytesWritten] noreturn:[bytesWritten]
+finedHosted call:[hostFinded,setState] noreturn:[hostFinded]
+heartTimeOut
+handshaked
+setState
+setSocketPtr
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+zp_netListenThread
+bSSLConn
+startListen call:[QString,ZP_TcpServer,connect,deleteLater,disconnect,evt_ListenClosed,evt_Message,listen,toString,tr] noreturn:[evt_ListenClosed]
+stopListen call:[QString,close,deleteLater,disconnect,evt_ListenClosed,evt_Message,tr] noreturn:[evt_ListenClosed]

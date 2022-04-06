@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2092123350">
+  <FileInfo check="ctu">
+<function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/pipeline/zp_pipeline.h:58:8" call-funcname="evt_start_work" call-argnr="1" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/pipeline/zp_pipeline.cpp" line="155" col="9" my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/pipeline/zp_pipeline.h:61:8" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/pipeline/zp_pipeline.h:54:19" my-argnr="1" my-argname="bValid" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/pipeline/zp_pipeline.cpp" line="75" col="4" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="canClose" lineNumber="8"/>
+    <functiondecl functionName="addThreads" lineNumber="19"/>
+    <functiondecl functionName="removeThreads" lineNumber="51"/>
+    <functiondecl functionName="popTask" lineNumber="73"/>
+    <functiondecl functionName="pushTask" lineNumber="95"/>
+    <functiondecl functionName="threadsCount" lineNumber="115"/>
+    <functiondecl functionName="payload" lineNumber="120"/>
+    <functiondecl functionName="idleThreads" lineNumber="129"/>
+    <functiondecl functionName="on_finished_task" lineNumber="148"/>
+    <functioncall functionName="FetchNewTask"/>
+    <functioncall functionName="QObject"/>
+    <functioncall functionName="QThread"/>
+    <functioncall functionName="QueuedConnection"/>
+    <functioncall functionName="addRef"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="evt_start_work"/>
+    <functioncall functionName="evt_stop_work"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="last"/>
+    <functioncall functionName="lock"/>
+    <functioncall functionName="moveToThread"/>
+    <functioncall functionName="nsz"/>
+    <functioncall functionName="on_finished_task"/>
+    <functioncall functionName="pTh"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="pop_back"/>
+    <functioncall functionName="pop_front"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="res"/>
+    <functioncall functionName="setStopMark"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="start"/>
+    <functioncall functionName="task"/>
+    <functioncall functionName="taskFinished"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="thread"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="unlock"/>
+    <functioncall functionName="zp_pipeline"/>
+    <functioncall functionName="zp_plTaskBase"/>
+    <functioncall functionName="zp_plWorkingThread"/>
+  </FileInfo>
+</analyzerinfo>

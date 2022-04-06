@@ -1,0 +1,40 @@
+{
+    "ZH412": {
+        "CrcDefaultVersion": {
+            "Date": "",
+            "FileName": "",
+            "FileSize": "2622945626",
+            "IsDefault": false,
+            "Message": "",
+            "Name": ""
+        },
+        "CrcVersionList": [
+            {
+                "Date": "2021/08/05 15:12:35",
+                "FileName": "DVR-T21080502-ZH412.6037-CH.crc",
+                "FileSize": "22597934",
+                "IsDefault": false,
+                "Message": "1,当主码流的录音关闭时，关闭远程监听、对讲和回环等声音",
+                "Name": "DVR-T21080502-ZH412.6037-CH.crc"
+            }
+        ],
+        "Date": "2021/07/29 17:06:23",
+        "GroupFileDefaultVersion": {
+            "Date": "",
+            "FileInfos": [
+            ],
+            "IsDefault": false,
+            "Message": "",
+            "Name": "",
+            "SavePath": ""
+        },
+        "GroupFileInfos": [
+        ],
+        "McuInfos": [
+        ],
+        "ProductDesp": "",
+        "ProductName": "ZH412",
+        "ProductTypeId": "0",
+        "SaveFilePath": "./version/ZH412/"
+    }
+}

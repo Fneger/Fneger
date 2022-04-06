@@ -1,0 +1,7 @@
+setupUi call:[QDialogButtonBox,QHBoxLayout,QLabel,QLineEdit,QVBoxLayout,SIGNAL,SLOT,accept,accepted,addLayout,addWidget,connect,connectSlotsByName,fromUtf8,isEmpty,objectName,reject,rejected,resize,retranslateUi,setObjectName,setOrientation,setStandardButtons] noreturn:[connectSlotsByName,setObjectName]
+retranslateUi call:[setText,setWindowTitle,translate] noreturn:[setText]
+DialogAddressInput call:[setupUi] noreturn:[setupUi]
+DialogAddressInput
+SetAddr call:[setText] noreturn:[setText]
+addr call:[text] noreturn:[text]
+port call:[text] noreturn:[text]

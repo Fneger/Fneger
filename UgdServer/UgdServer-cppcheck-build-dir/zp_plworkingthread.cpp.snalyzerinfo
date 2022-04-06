@@ -1,0 +1,4 @@
+zp_plTaskBase
+zp_plWorkingThread call:[assert]
+setStopMark call:[currentThread,deleteLater,lock,quit,unlock] noreturn:[quit]
+FetchNewTask call:[LockRun,UnlockRun,delRef,popTask,pushTask,run,taskFinished] noreturn:[UnlockRun,pushTask,taskFinished]

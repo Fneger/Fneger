@@ -1,0 +1,11 @@
+zp_plTaskBase
+zp_pipeline
+canClose
+addThreads call:[QThread,connect,lock,moveToThread,push_back,size,start,unlock,zp_plWorkingThread] noreturn:[size,unlock]
+removeThreads call:[evt_stop_work,last,pop_back,size] noreturn:[pop_back,size]
+popTask call:[begin,empty,lock,pop_front,unlock]
+pushTask call:[addRef,lock,on_finished_task,push_back,size,unlock]
+threadsCount call:[size] noreturn:[size]
+payload call:[lock,size,unlock]
+idleThreads call:[size]
+on_finished_task call:[evt_start_work,lock,size,unlock] noreturn:[evt_start_work]

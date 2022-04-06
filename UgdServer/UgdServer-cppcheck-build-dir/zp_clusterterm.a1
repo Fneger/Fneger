@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2626510372">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;QAsioTcpsocket&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;QAsioTcpsocket&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="13" column="5"/>
+            <symbol>QAsioTcpsocket</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;disconnectFromHost&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;disconnectFromHost&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="21" column="10" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\tcpabstractsocket.h" line="53" column="18" info="Virtual function in base class"/>
+            <symbol>disconnectFromHost</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;setSocketOption&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;setSocketOption&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="23" column="18" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\tcpabstractsocket.h" line="62" column="18" info="Virtual function in base class"/>
+            <symbol>setSocketOption</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;getSocketOption&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;getSocketOption&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="25" column="33" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\tcpabstractsocket.h" line="64" column="33" info="Virtual function in base class"/>
+            <symbol>getSocketOption</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;hostConnected&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;hostConnected&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="31" column="18" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\tcpabstractsocket.h" line="107" column="18" info="Virtual function in base class"/>
+            <symbol>hostConnected</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;sendData&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;sendData&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="32" column="10" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\tcpabstractsocket.h" line="85" column="18" info="Virtual function in base class"/>
+            <symbol>sendData</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;run&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;run&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\cluster\zp_clusternode.h" line="21" column="7" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\pipeline\zp_pltaskbase.h" line="25" column="15" info="Virtual function in base class"/>
+            <symbol>run</symbol>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\cluster\zp_clusterterm.cpp" line="419" column="25"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\cluster\zp_clusterterm.cpp" line="467" column="25"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\cluster\zp_clusterterm.cpp" line="486" column="25"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\cluster\zp_clusterterm.cpp" line="398" column="31"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h:62:18" call-funcname="setSocketOption" call-argnr="3" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h" line="68" col="24" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h:62:18" call-funcname="setSocketOption" call-argnr="2" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h" line="71" col="24" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h:127:17" call-funcname="setState" call-argnr="1" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h" line="90" col="17" call-argexpr="UnconnectedState" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/qasiotcpserver.h:34:10" call-funcname="setSocketOption" call-argnr="2" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/qasiotcpserver.h" line="28" col="24" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/qasiotcpserver.h:34:10" call-funcname="setSocketOption" call-argnr="3" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/qasiotcpserver.h" line="31" col="24" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h:85:18" call-funcname="sendData" call-argnr="1" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h" line="60" col="9" my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h:59:17" my-argnr="1"/>
+<function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.h:120:8" call-funcname="evt_RemoteData_transferred" call-argnr="1" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp" line="407" col="8" my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.h:132:8" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.h:79:8" my-argnr="1" my-argname="c" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp" line="204" col="7" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.h:75:11" my-argnr="2" my-argname="pnPort" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp" line="503" col="4" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.h:79:8" my-argnr="1" my-argname="c" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/cluster/zp_clusterterm.cpp" line="204" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setClientNums" lineNumber="25"/>
+    <functiondecl functionName="clientNums" lineNumber="30"/>
+    <functiondecl functionName="default_factory" lineNumber="44"/>
+    <functiondecl functionName="SetNodeFactory" lineNumber="58"/>
+    <functiondecl functionName="LANPort" lineNumber="68"/>
+    <functiondecl functionName="LANAddr" lineNumber="72"/>
+    <functiondecl functionName="setLANAddr" lineNumber="76"/>
+    <functiondecl functionName="setLANPort" lineNumber="80"/>
+    <functiondecl functionName="PublishPort" lineNumber="85"/>
+    <functiondecl functionName="PublishAddr" lineNumber="89"/>
+    <functiondecl functionName="setPublishAddr" lineNumber="93"/>
+    <functiondecl functionName="setPublishPort" lineNumber="97"/>
+    <functiondecl functionName="netEng" lineNumber="101"/>
+    <functiondecl functionName="taskEng" lineNumber="105"/>
+    <functiondecl functionName="setName" lineNumber="109"/>
+    <functiondecl functionName="name" lineNumber="113"/>
+    <functiondecl functionName="heartBeatingThrdHold" lineNumber="117"/>
+    <functiondecl functionName="setHeartBeatingThrd" lineNumber="121"/>
+    <functiondecl functionName="StartListen" lineNumber="125"/>
+    <functiondecl functionName="JoinCluster" lineNumber="130"/>
+    <functiondecl functionName="canExit" lineNumber="134"/>
+    <functiondecl functionName="SvrNames" lineNumber="138"/>
+    <functiondecl functionName="SvrLANAddr" lineNumber="151"/>
+    <functiondecl functionName="SvrLANPort" lineNumber="161"/>
+    <functiondecl functionName="SvrPubAddr" lineNumber="170"/>
+    <functiondecl functionName="SvrPubPort" lineNumber="180"/>
+    <functiondecl functionName="remoteClientNums" lineNumber="191"/>
+    <functiondecl functionName="regisitNewServer" lineNumber="201"/>
+    <functiondecl functionName="SvrNodeFromName" lineNumber="220"/>
+    <functiondecl functionName="SvrNodeFromSocket" lineNumber="233"/>
+    <functiondecl functionName="on_evt_NewClientConnected" lineNumber="246"/>
+    <functiondecl functionName="on_evt_ClientEncrypted" lineNumber="277"/>
+    <functiondecl functionName="on_evt_ClientDisconnected" lineNumber="308"/>
+    <functiondecl functionName="on_evt_Data_recieved" lineNumber="363"/>
+    <functiondecl functionName="KickDeadClients" lineNumber="394"/>
+    <functiondecl functionName="on_evt_Data_transferred" lineNumber="405"/>
+    <functiondecl functionName="BroadcastServers" lineNumber="409"/>
+    <functiondecl functionName="SendHeartBeatings" lineNumber="463"/>
+    <functiondecl functionName="SendDataToRemoteServer" lineNumber="482"/>
+    <functiondecl functionName="minPayloadServer" lineNumber="497"/>
+    <functioncall functionName="AddListeningAddress"/>
+    <functioncall functionName="Address_LAN"/>
+    <functioncall functionName="Address_Pub"/>
+    <functioncall functionName="Broadcast"/>
+    <functioncall functionName="CanExit"/>
+    <functioncall functionName="CheckHeartBeating"/>
+    <functioncall functionName="ConnectedState"/>
+    <functioncall functionName="ConnectingState"/>
+    <functioncall functionName="IP_TCP_NODelay"/>
+    <functioncall functionName="Keep_Live"/>
+    <functioncall functionName="KickClients"/>
+    <functioncall functionName="LANAddr"/>
+    <functioncall functionName="LANPort"/>
+    <functioncall functionName="Linger"/>
+    <functioncall functionName="Multicast_Loopback"/>
+    <functioncall functionName="Multicast_TTL"/>
+    <functioncall functionName="PublishAddr"/>
+    <functioncall functionName="PublishPort"/>
+    <functioncall functionName="QAsioTcpsocket"/>
+    <functioncall functionName="QByteArray"/>
+    <functioncall functionName="QObject"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="QThread"/>
+    <functioncall functionName="Q_DISABLE_COPY"/>
+    <functioncall functionName="QueuedConnection"/>
+    <functioncall functionName="Receive_Buffer_Size"/>
+    <functioncall functionName="Receive_Low_Watermark"/>
+    <functioncall functionName="Reuse_Address"/>
+    <functioncall functionName="SendDataToClient"/>
+    <functioncall functionName="SendHelloPackage"/>
+    <functioncall functionName="Send_Buffer_Size"/>
+    <functioncall functionName="Send_Low_Watermark"/>
+    <functioncall functionName="SocketOption"/>
+    <functioncall functionName="TcpAbstractSocket"/>
+    <functioncall functionName="UnconnectedState"/>
+    <functioncall functionName="_1"/>
+    <functioncall functionName="_2"/>
+    <functioncall functionName="_3"/>
+    <functioncall functionName="addr"/>
+    <functioncall functionName="addrLAN"/>
+    <functioncall functionName="addrPub"/>
+    <functioncall functionName="array"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="bSSL"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="bind"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="bufAddresses"/>
+    <functioncall functionName="bytesWritten"/>
+    <functioncall functionName="bytes_transferred"/>
+    <functioncall functionName="bytesent"/>
+    <functioncall functionName="c"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="canClose"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="clientHandle"/>
+    <functioncall functionName="clientNums"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="connectTo"/>
+    <functioncall functionName="connected"/>
+    <functioncall functionName="constData"/>
+    <functioncall functionName="contains"/>
+    <functioncall functionName="ct"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="datablock"/>
+    <functioncall functionName="default_factory"/>
+    <functioncall functionName="deleteLater"/>
+    <functioncall functionName="disConnected"/>
+    <functioncall functionName="disconnect"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="erroString"/>
+    <functioncall functionName="erro_code"/>
+    <functioncall functionName="erro_string"/>
+    <functioncall functionName="evt_ClientDisconnected"/>
+    <functioncall functionName="evt_Data_recieved"/>
+    <functioncall functionName="evt_Data_transferred"/>
+    <functioncall functionName="evt_Message"/>
+    <functioncall functionName="evt_NewClientConnected"/>
+    <functioncall functionName="evt_NewSvrConnected"/>
+    <functioncall functionName="evt_NewSvrDisconnected"/>
+    <functioncall functionName="evt_RemoteData_recieved"/>
+    <functioncall functionName="evt_RemoteData_transferred"/>
+    <functioncall functionName="evt_SendDataToClient"/>
+    <functioncall functionName="evt_SocketError"/>
+    <functioncall functionName="evt_close_client"/>
+    <functioncall functionName="evt_connect_to"/>
+    <functioncall functionName="fac"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="foreach"/>
+    <functioncall functionName="handle_id"/>
+    <functioncall functionName="haveErro"/>
+    <functioncall functionName="hostConnected"/>
+    <functioncall functionName="hostFinded"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="ip"/>
+    <functioncall functionName="isEnble"/>
+    <functioncall functionName="key"/>
+    <functioncall functionName="keys"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="lock"/>
+    <functioncall functionName="m_factory"/>
+    <functioncall functionName="m_nClientNums"/>
+    <functioncall functionName="m_nodeToBeDel"/>
+    <functioncall functionName="m_pClusterNet"/>
+    <functioncall functionName="m_strTermName"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="n"/>
+    <functioncall functionName="nHashContains"/>
+    <functioncall functionName="nMsgLen"/>
+    <functioncall functionName="nPort"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="nameCurr"/>
+    <functioncall functionName="netEng"/>
+    <functioncall functionName="nnum"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="on_evt_ClientDisconnected"/>
+    <functioncall functionName="on_evt_Data_recieved"/>
+    <functioncall functionName="on_evt_Data_transferred"/>
+    <functioncall functionName="on_evt_NewClientConnected"/>
+    <functioncall functionName="option"/>
+    <functioncall functionName="pClientNode"/>
+    <functioncall functionName="pMinNode"/>
+    <functioncall functionName="pNode"/>
+    <functioncall functionName="pTerm"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="pdelobj"/>
+    <functioncall functionName="pnode"/>
+    <functioncall functionName="port"/>
+    <functioncall functionName="portLAN"/>
+    <functioncall functionName="portPub"/>
+    <functioncall functionName="prot"/>
+    <functioncall functionName="psock"/>
+    <functioncall functionName="pushTask"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="push_new_data"/>
+    <functioncall functionName="qint64"/>
+    <functioncall functionName="quint64"/>
+    <functioncall functionName="ref"/>
+    <functioncall functionName="remove"/>
+    <functioncall functionName="removeAll"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="sendData"/>
+    <functioncall functionName="sentReadData"/>
+    <functioncall functionName="setSocketOption"/>
+    <functioncall functionName="setState"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="soc"/>
+    <functioncall functionName="sock"/>
+    <functioncall functionName="sockkeys"/>
+    <functioncall functionName="st"/>
+    <functioncall functionName="stateChange"/>
+    <functioncall functionName="state_"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="svrName"/>
+    <functioncall functionName="tag_CSM_Broadcast"/>
+    <functioncall functionName="tag_CSM_heartBeating"/>
+    <functioncall functionName="tag_header"/>
+    <functioncall functionName="termName"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="toBedel"/>
+    <functioncall functionName="toStdString"/>
+    <functioncall functionName="toString"/>
+    <functioncall functionName="tr"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="unlock"/>
+    <functioncall functionName="uuid"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="zp_ClusterNode"/>
+    <functioncall functionName="zp_ClusterTerm"/>
+    <functioncall functionName="zp_netTransThread"/>
+    <functioncall functionName="zp_net_Engine"/>
+    <functioncall functionName="zp_pipeline"/>
+    <functioncall functionName="zp_plTaskBase"/>
+    <functioncall functionName="zp_plWorkingThread"/>
+  </FileInfo>
+</analyzerinfo>

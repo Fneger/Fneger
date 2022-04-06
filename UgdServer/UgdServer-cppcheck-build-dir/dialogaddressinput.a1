@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1656854532">
+  <FileInfo check="Class">
+<class name="DialogAddressInput" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/dialogaddressinput.h" line="10" col="1" hash="8555763827286654530"/>
+<class name="Ui_DialogAddressInput" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ui_dialogaddressinput.h" line="23" col="1" hash="7366671819101607884"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ui_dialogaddressinput.h:35:10" my-argnr="1" my-argname="DialogAddressInput" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ui_dialogaddressinput.h" line="37" col="13" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ui_dialogaddressinput.h:87:10" my-argnr="1" my-argname="DialogAddressInput" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ui_dialogaddressinput.h" line="89" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ui_dialogaddressinput.h:35:10" my-argnr="1" my-argname="DialogAddressInput" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ui_dialogaddressinput.h" line="37" col="13" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ui_dialogaddressinput.h:87:10" my-argnr="1" my-argname="DialogAddressInput" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ui_dialogaddressinput.h" line="89" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="SetAddr" lineNumber="15"/>
+    <functiondecl functionName="addr" lineNumber="21"/>
+    <functiondecl functionName="port" lineNumber="26"/>
+    <functioncall functionName="DialogAddressInput"/>
+    <functioncall functionName="Horizontal"/>
+    <functioncall functionName="Ok"/>
+    <functioncall functionName="QDialog"/>
+    <functioncall functionName="QDialogButtonBox"/>
+    <functioncall functionName="QHBoxLayout"/>
+    <functioncall functionName="QLabel"/>
+    <functioncall functionName="QLineEdit"/>
+    <functioncall functionName="QVBoxLayout"/>
+    <functioncall functionName="SIGNAL"/>
+    <functioncall functionName="SLOT"/>
+    <functioncall functionName="accept"/>
+    <functioncall functionName="accepted"/>
+    <functioncall functionName="addLayout"/>
+    <functioncall functionName="addWidget"/>
+    <functioncall functionName="addr"/>
+    <functioncall functionName="buttonBox"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="connectSlotsByName"/>
+    <functioncall functionName="fromUtf8"/>
+    <functioncall functionName="horizontalLayout"/>
+    <functioncall functionName="horizontalLayout_2"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="isEmpty"/>
+    <functioncall functionName="label_3"/>
+    <functioncall functionName="label_4"/>
+    <functioncall functionName="lineEdit_addr"/>
+    <functioncall functionName="lineEdit_port"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="objectName"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="port"/>
+    <functioncall functionName="reject"/>
+    <functioncall functionName="rejected"/>
+    <functioncall functionName="resize"/>
+    <functioncall functionName="retranslateUi"/>
+    <functioncall functionName="setObjectName"/>
+    <functioncall functionName="setOrientation"/>
+    <functioncall functionName="setStandardButtons"/>
+    <functioncall functionName="setText"/>
+    <functioncall functionName="setWindowTitle"/>
+    <functioncall functionName="setupUi"/>
+    <functioncall functionName="text"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="translate"/>
+    <functioncall functionName="ui"/>
+  </FileInfo>
+</analyzerinfo>

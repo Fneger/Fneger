@@ -1,0 +1,32 @@
+syntax = "proto3";
+package fneger;
+
+message Heartbeat {
+    optional  int64 id = 1; //Unique ID number for this client.
+    optional  int64 timestamp = 2;
+}
+
+enum QueryCode{
+    QueryDefaultVersion = 0;
+}
+
+message Query{
+    optional  int64 id = 1; //Unique ID number for this client.
+    optional  int64 timestamp = 2;
+    optional  QueryCode query_code = 3;
+    optional  string json_body = 4;  //保存请求Json字段
+}
+
+enum QueryResult{
+    QuerySucc = 0;
+    QueryFailed = 1;
+}
+
+message Answer{
+    optional  int64 id = 1; //Unique ID number for this client.
+    optional  int64 timestamp = 2;
+    optional  QueryCode query_code = 3;
+    optional  string json_body = 4;  //保存请求Json字段
+    optional  QueryResult result_code = 5; //执行结果
+    optional  string tips = 6;   //提示信息
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2079099645">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setStopMark" lineNumber="23"/>
+    <functiondecl functionName="FetchNewTask" lineNumber="42"/>
+    <functioncall functionName="LockRun"/>
+    <functioncall functionName="QObject"/>
+    <functioncall functionName="QThread"/>
+    <functioncall functionName="UnlockRun"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="bValid"/>
+    <functioncall functionName="currentThread"/>
+    <functioncall functionName="delRef"/>
+    <functioncall functionName="deleteLater"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="lock"/>
+    <functioncall functionName="m_bRuning"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="pipl"/>
+    <functioncall functionName="popTask"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="pushTask"/>
+    <functioncall functionName="quit"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="run"/>
+    <functioncall functionName="taskFinished"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="unlock"/>
+    <functioncall functionName="zp_plTaskBase"/>
+    <functioncall functionName="zp_plWorkingThread"/>
+  </FileInfo>
+</analyzerinfo>

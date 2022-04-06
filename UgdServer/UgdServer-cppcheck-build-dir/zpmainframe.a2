@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1429481875">
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to evaluate #if condition" verbose="failed to evaluate #if condition">
+            <location file="E:\boost_1_77_0\boost\config\detail\select_stdlib_config.hpp" line="19" column="0"/>
+        </error>
+</analyzerinfo>

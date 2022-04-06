@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base-ui\CHintWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\caddeventdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\caddgroupfiledlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\caddproductdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\cadduserdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\caddversindlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\cadministratordlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\cbdugdclientprotocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base-ui\ccalendardlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ccommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\celidelabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\ceventitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ceventsdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\cgeneraluseraddproductdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\cgroupfileitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cloginfodlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\cmcuinfodlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\cproductitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\cproductversioninfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\ctcpclient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\ctcpclienttest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\cuseritem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="info\cversioninfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logindlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\myautomutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\mythread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\qghtcpclient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logger\st_logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UgdServer\ZoomPipeline\smartlink\st_message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UgdServer\ZoomPipeline\smartlink\st_packet_tool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="base-ui\CHintWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\caddeventdlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\caddgroupfiledlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\caddproductdlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\cadduserdlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\caddversindlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\cadministratordlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="network\cbdugdclientprotocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="base-ui\ccalendardlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="ccommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="info\celidelabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\ceventitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ceventsdlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\cgeneraluseraddproductdlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\cgroupfileitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="cloginfodlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\cmcuinfodlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\cproductitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\cproductversioninfo.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="network\ctcpclient.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="network\ctcpclienttest.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\cuseritem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="info\cversioninfo.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="logindlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="base\myautomutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="base\mythread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="network\qghtcpclient.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="logger\st_logger.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\UgdServer\ZoomPipeline\smartlink\st_packet_tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdAppClient\translations\enl2chinese_sim.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="info\caddeventdlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\caddgroupfiledlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\caddproductdlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\cadduserdlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\caddversindlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\cadministratordlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="base-ui\ccalendardlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\ceventitem.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ceventsdlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\cgeneraluseraddproductdlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\cgroupfileitem.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="cloginfodlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\cmcuinfodlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\cproductitem.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\cproductversioninfo.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\cuseritem.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="info\cversioninfo.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="logindlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\add_device.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\add_mcu.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\administrator.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\checked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\client_refresh.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn10.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn11.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn12.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn13.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn4.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn5.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn6.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn7.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn8.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cn9.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\delete_device.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\delete_mcu.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\download.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\edit_event.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\events.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="images.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\log_search.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\product_refresh.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\reset_event.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\save_product.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\stop_transmission.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\upload.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdAppClient\MdvrUgdClient_resource.rc" />
+  </ItemGroup>
+</Project>

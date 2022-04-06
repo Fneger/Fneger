@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2047794957">
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;st_client_protocol::m_MsgProperties&apos; is not initialized in the constructor." verbose="Member variable &apos;st_client_protocol::m_MsgProperties&apos; is not initialized in the constructor." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_client_protocol.cpp" line="6" column="25"/>
+            <symbol>st_client_protocol::m_MsgProperties</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;st_client_protocol::m_DownlinkMSN&apos; is not initialized in the constructor." verbose="Member variable &apos;st_client_protocol::m_DownlinkMSN&apos; is not initialized in the constructor." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_client_protocol.cpp" line="6" column="25"/>
+            <symbol>st_client_protocol::m_DownlinkMSN</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;st_client_protocol::m_UplinkMSN&apos; is not initialized in the constructor." verbose="Member variable &apos;st_client_protocol::m_UplinkMSN&apos; is not initialized in the constructor." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_client_protocol.cpp" line="6" column="25"/>
+            <symbol>st_client_protocol::m_UplinkMSN</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;st_client_protocol::m_DeviceID&apos; is not initialized in the constructor." verbose="Member variable &apos;st_client_protocol::m_DeviceID&apos; is not initialized in the constructor." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_client_protocol.cpp" line="6" column="25"/>
+            <symbol>st_client_protocol::m_DeviceID</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;st_client_protocol::m_DownlinkFID&apos; is not initialized in the constructor." verbose="Member variable &apos;st_client_protocol::m_DownlinkFID&apos; is not initialized in the constructor." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_client_protocol.cpp" line="6" column="25"/>
+            <symbol>st_client_protocol::m_DownlinkFID</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;st_client_protocol::m_UplinkFID&apos; is not initialized in the constructor." verbose="Member variable &apos;st_client_protocol::m_UplinkFID&apos; is not initialized in the constructor." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_client_protocol.cpp" line="6" column="25"/>
+            <symbol>st_client_protocol::m_UplinkFID</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:27:17" call-funcname="put2bytes" call-argnr="3" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp" line="51" col="22" call-argexpr="&amp;msglen" call-argvaluetype="7" call-argvalue="2"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:27:17" call-funcname="put2bytes" call-argnr="3" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp" line="52" col="22" call-argexpr="&amp;msglen" call-argvaluetype="7" call-argvalue="2"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" call-funcname="put4bytes" call-argnr="3" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp" line="83" col="22" call-argexpr="&amp;msglen" call-argvaluetype="7" call-argvalue="2"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" call-funcname="put4bytes" call-argnr="3" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp" line="84" col="22" call-argexpr="&amp;msglen" call-argvaluetype="7" call-argvalue="2"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" call-funcname="put4bytes" call-argnr="3" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp" line="85" col="22" call-argexpr="&amp;msglen" call-argvaluetype="7" call-argvalue="2"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" call-funcname="put4bytes" call-argnr="3" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.cpp" line="86" col="22" call-argexpr="&amp;msglen" call-argvaluetype="7" call-argvalue="2"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:27:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="43" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="51" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:31:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="61" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:33:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="75" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:35:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="83" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:37:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="91" col="20" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:27:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="43" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:27:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="45" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="51" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="55" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:31:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="61" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:31:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="69" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:33:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="75" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:33:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="76" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:35:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="83" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:35:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="84" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:37:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="91" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:37:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="93" col="6" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:27:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="45" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="55" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:31:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="69" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:33:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="75" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:33:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="76" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:35:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="83" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:35:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="84" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:37:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="91" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:37:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="93" col="6" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="packing" lineNumber="11"/>
+    <functioncall functionName="BD_TMN_LOGIN_RESPONSE_S"/>
+    <functioncall functionName="BD_TRANSFER_FILE_DATA_S"/>
+    <functioncall functionName="BdAddNewCrcVersionJsonParseError_E"/>
+    <functioncall functionName="BdAddNewMcuTypeJsonParseError_E"/>
+    <functioncall functionName="BdAddProductInfoFalied_E"/>
+    <functioncall functionName="BdAddUserFailed_E"/>
+    <functioncall functionName="BdCrcVersionDontExists_E"/>
+    <functioncall functionName="BdCreateFileFailed_E"/>
+    <functioncall functionName="BdDataTransmissionError_E"/>
+    <functioncall functionName="BdDeleteProductInfoFailed_E"/>
+    <functioncall functionName="BdEditUserFailed_E"/>
+    <functioncall functionName="BdExecutionFailed_E"/>
+    <functioncall functionName="BdExecutionSucceeded_E"/>
+    <functioncall functionName="BdGetUserListFailed_E"/>
+    <functioncall functionName="BdGroupFileInfoParseError_E"/>
+    <functioncall functionName="BdJsonFormatError_E"/>
+    <functioncall functionName="BdJsonParseError_E"/>
+    <functioncall functionName="BdMcuTypeDontExists_E"/>
+    <functioncall functionName="BdMcuTypeExists_E"/>
+    <functioncall functionName="BdMcuTypeInfoParseError_E"/>
+    <functioncall functionName="BdOpenFileFialed_E"/>
+    <functioncall functionName="BdOpenProductInfoFileFailed_E"/>
+    <functioncall functionName="BdProductDontExist_E"/>
+    <functioncall functionName="BdProductInfoParseError_E"/>
+    <functioncall functionName="BdProductMcuInfoParseError_E"/>
+    <functioncall functionName="BdRemoveEventFailed_E"/>
+    <functioncall functionName="BdRemoveFileFailed_E"/>
+    <functioncall functionName="BdRemoveUserFailed_E"/>
+    <functioncall functionName="BdRequestAddEvent_E"/>
+    <functioncall functionName="BdRequestAddFileToGroupFile_E"/>
+    <functioncall functionName="BdRequestAddGroupFileVersion_E"/>
+    <functioncall functionName="BdRequestAddGroupFile_E"/>
+    <functioncall functionName="BdRequestAddLog_E"/>
+    <functioncall functionName="BdRequestAddMcuType_E"/>
+    <functioncall functionName="BdRequestAddNewCrcVersion_E"/>
+    <functioncall functionName="BdRequestAddNewMcuVersion_E"/>
+    <functioncall functionName="BdRequestAddProductInfo_E"/>
+    <functioncall functionName="BdRequestAddUser_E"/>
+    <functioncall functionName="BdRequestDeleteFile_E"/>
+    <functioncall functionName="BdRequestDeleteProductInfo_E"/>
+    <functioncall functionName="BdRequestDownloadFile_E"/>
+    <functioncall functionName="BdRequestEditUser_E"/>
+    <functioncall functionName="BdRequestGetUserList_E"/>
+    <functioncall functionName="BdRequestQueryDefaultVersionInfo_E"/>
+    <functioncall functionName="BdRequestQueryDeviceClientEvents_E"/>
+    <functioncall functionName="BdRequestQueryEventStatus_E"/>
+    <functioncall functionName="BdRequestQueryLog_E"/>
+    <functioncall functionName="BdRequestQueryPcClientEvents_E"/>
+    <functioncall functionName="BdRequestQueryProductInfo_E"/>
+    <functioncall functionName="BdRequestQueryProductList_E"/>
+    <functioncall functionName="BdRequestQuerySpecifyVersionInfo_E"/>
+    <functioncall functionName="BdRequestQueryTerminalInfoLog_E"/>
+    <functioncall functionName="BdRequestRemoveCrcVersion_E"/>
+    <functioncall functionName="BdRequestRemoveEvent_E"/>
+    <functioncall functionName="BdRequestRemoveFilesFromGroupFile_E"/>
+    <functioncall functionName="BdRequestRemoveGroupFileVersion_E"/>
+    <functioncall functionName="BdRequestRemoveGroupFile_E"/>
+    <functioncall functionName="BdRequestRemoveMcuType_E"/>
+    <functioncall functionName="BdRequestRemoveMcuVersion_E"/>
+    <functioncall functionName="BdRequestRemoveUser_E"/>
+    <functioncall functionName="BdRequestSaveProductInfo_E"/>
+    <functioncall functionName="BdRequestSetDefaultCrcVersion_E"/>
+    <functioncall functionName="BdRequestSetDefaultGroupFileVersion_E"/>
+    <functioncall functionName="BdRequestSetDefaultMcuVersion_E"/>
+    <functioncall functionName="BdRequestSetEventStatus_E"/>
+    <functioncall functionName="BdRequestSetTerminalInfo_E"/>
+    <functioncall functionName="BdRequestStopDownloadFile_E"/>
+    <functioncall functionName="BdRequestStopUploadFile_E"/>
+    <functioncall functionName="BdRequestUploadFile_E"/>
+    <functioncall functionName="BdSaveProductInfoFileFailed_E"/>
+    <functioncall functionName="BdUploadFileRequiredInfoError_E"/>
+    <functioncall functionName="BdUserAuthAdmin_E"/>
+    <functioncall functionName="BdUserAuthGeneral_E"/>
+    <functioncall functionName="BdUserNotLogged_E"/>
+    <functioncall functionName="EventGetDeviceFiles_E"/>
+    <functioncall functionName="EventRevDeviceNum_E"/>
+    <functioncall functionName="EventRevIdTypeMax_E"/>
+    <functioncall functionName="EventRevLicenseNum_E"/>
+    <functioncall functionName="EventRevPhoneNum_E"/>
+    <functioncall functionName="EventRevVideoId_E"/>
+    <functioncall functionName="EventStatusExecuting_E"/>
+    <functioncall functionName="EventStatusFailed_E"/>
+    <functioncall functionName="EventStatusSucceed_E"/>
+    <functioncall functionName="EventStatusWaitting_E"/>
+    <functioncall functionName="EventTypeMax_E"/>
+    <functioncall functionName="EventUpgradeDeviceCrc_E"/>
+    <functioncall functionName="EventUpgradeDeviceMcu_E"/>
+    <functioncall functionName="EventUpgradeDevicePara_E"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="ReasonFileOpenFialed_E"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="auth"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="currently_sent_bytes"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="displacement"/>
+    <functioncall functionName="file_data"/>
+    <functioncall functionName="file_size"/>
+    <functioncall functionName="fill"/>
+    <functioncall functionName="fill_len"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="frame_xor"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="json"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="models_id"/>
+    <functioncall functionName="msglen"/>
+    <functioncall functionName="needUpgrade"/>
+    <functioncall functionName="not_sent_bytes"/>
+    <functioncall functionName="pBuff"/>
+    <functioncall functionName="pPacket"/>
+    <functioncall functionName="platform_time"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="put2bytes"/>
+    <functioncall functionName="put4bytes"/>
+    <functioncall functionName="res"/>
+    <functioncall functionName="resize"/>
+    <functioncall functionName="sent_bytes"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="st_client_protocol"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="strcpy"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="struct"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="type"/>
+    <functioncall functionName="uint16_t"/>
+    <functioncall functionName="uint32_t"/>
+    <functioncall functionName="uint64_t"/>
+    <functioncall functionName="vdata"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,182 @@
+{
+    "ZH410": {
+        "CrcDefaultVersion": {
+            "Date": "2021/08/05 15:11:41",
+            "FileName": "DVR-T21080501-ZH410.6037-CH.crc",
+            "FileSize": "15836534",
+            "IsDefault": true,
+            "Message": "1,当主码流的录音关闭时，关闭远程监听、对讲和回环等声音",
+            "Name": "DVR-T21080501-ZH410.6037-CH.crc"
+        },
+        "CrcVersionList": [
+            {
+                "Date": "2021/07/29 18:54:42",
+                "FileName": "DVR-T21072960-ZH410.5977-CH.crc",
+                "FileSize": "15832438",
+                "IsDefault": false,
+                "Message": "将“最新版本”改为“默认版本”",
+                "Name": "DVR-T21072960-ZH410.5977-CH.crc"
+            },
+            {
+                "Date": "2021/08/05 15:11:41",
+                "FileName": "DVR-T21080501-ZH410.6037-CH.crc",
+                "FileSize": "15836534",
+                "IsDefault": true,
+                "Message": "1,当主码流的录音关闭时，关闭远程监听、对讲和回环等声音",
+                "Name": "DVR-T21080501-ZH410.6037-CH.crc"
+            }
+        ],
+        "Date": "2021/03/25 18:29:35",
+        "GroupFileDefaultVersion": {
+            "Date": "2021/10/23 11:21:56",
+            "FileInfos": [
+                {
+                    "Date": "2021/10/23 11:22:02",
+                    "FileName": "DVR-T21081291-ZH510.000-CH.crc",
+                    "FileSize": "14212284",
+                    "IsDefault": false,
+                    "Message": "",
+                    "Name": "DVR-T21081291-ZH510.000-CH.crc"
+                },
+                {
+                    "Date": "2021/10/23 11:22:27",
+                    "FileName": "README.md",
+                    "FileSize": "25",
+                    "IsDefault": false,
+                    "Message": "",
+                    "Name": "README.md"
+                }
+            ],
+            "IsDefault": true,
+            "Message": "",
+            "Name": "GroupTest2",
+            "SavePath": "./version/ZH410/GroupTest2/"
+        },
+        "GroupFileInfos": [
+            {
+                "Date": "2021/10/23 11:21:07",
+                "FileInfos": [
+                    {
+                        "Date": "2021/10/23 11:21:32",
+                        "FileName": "LICENSE",
+                        "FileSize": "35149",
+                        "IsDefault": false,
+                        "Message": "",
+                        "Name": "LICENSE"
+                    },
+                    {
+                        "Date": "2021/10/23 11:21:42",
+                        "FileName": "README.md",
+                        "FileSize": "25",
+                        "IsDefault": false,
+                        "Message": "",
+                        "Name": "README.md"
+                    }
+                ],
+                "IsDefault": false,
+                "Message": "for test froup",
+                "Name": "GroupTest1",
+                "SavePath": "./version/ZH410/GroupTest1/"
+            },
+            {
+                "Date": "2021/10/23 11:21:56",
+                "FileInfos": [
+                    {
+                        "Date": "2021/10/23 11:22:02",
+                        "FileName": "DVR-T21081291-ZH510.000-CH.crc",
+                        "FileSize": "14212284",
+                        "IsDefault": false,
+                        "Message": "",
+                        "Name": "DVR-T21081291-ZH510.000-CH.crc"
+                    },
+                    {
+                        "Date": "2021/10/23 11:22:27",
+                        "FileName": "README.md",
+                        "FileSize": "25",
+                        "IsDefault": false,
+                        "Message": "",
+                        "Name": "README.md"
+                    }
+                ],
+                "IsDefault": true,
+                "Message": "",
+                "Name": "GroupTest2",
+                "SavePath": "./version/ZH410/GroupTest2/"
+            }
+        ],
+        "McuInfos": [
+            {
+                "McuDefaultVersion": {
+                    "Date": "",
+                    "FileName": "",
+                    "FileSize": "3615575976",
+                    "IsDefault": true,
+                    "Message": "",
+                    "Name": ""
+                },
+                "McuTypeId": "0",
+                "McuTypeName": "F03",
+                "McuVersionList": [
+                    {
+                        "Date": "2021/03/25 18:32:56",
+                        "FileName": "F03-T20111204-ZH410.hex",
+                        "FileSize": "71847",
+                        "IsDefault": false,
+                        "Message": "",
+                        "Name": "F03-T20111204-ZH410.hex"
+                    },
+                    {
+                        "Date": "2021/03/25 18:33:05",
+                        "FileName": "F03-T21010832-ZH410.hex",
+                        "FileSize": "72117",
+                        "IsDefault": false,
+                        "Message": "",
+                        "Name": "F03-T21010832-ZH410.hex"
+                    },
+                    {
+                        "Date": "2021/03/25 18:33:13",
+                        "FileName": "F03-T21010932-ZH410.hex",
+                        "FileSize": "72771",
+                        "IsDefault": false,
+                        "Message": "",
+                        "Name": "F03-T21010932-ZH410.hex"
+                    }
+                ]
+            },
+            {
+                "McuDefaultVersion": {
+                    "Date": "",
+                    "FileName": "",
+                    "FileSize": "3615575976",
+                    "IsDefault": true,
+                    "Message": "",
+                    "Name": ""
+                },
+                "McuTypeId": "0",
+                "McuTypeName": "MCU",
+                "McuVersionList": [
+                    {
+                        "Date": "2021/03/25 18:32:19",
+                        "FileName": "MCU-T21031091-ZH410.hex",
+                        "FileSize": "65827",
+                        "IsDefault": false,
+                        "Message": "",
+                        "Name": "MCU-T21031091-ZH410.hex"
+                    },
+                    {
+                        "Date": "2021/03/25 18:32:32",
+                        "FileName": "MCU-T21031092-ZH410.hex",
+                        "FileSize": "65827",
+                        "IsDefault": false,
+                        "Message": "",
+                        "Name": "MCU-T21031092-ZH410.hex"
+                    }
+                ]
+            }
+        ],
+        "ProductDesp": "",
+        "ProductName": "ZH410",
+        "ProductTypeId": "0",
+        "SaveFilePath": "./version/ZH410/"
+    }
+}

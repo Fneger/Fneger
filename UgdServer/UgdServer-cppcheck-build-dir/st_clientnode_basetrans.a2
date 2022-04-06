@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3978829000">
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;m_uuid&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_uuid&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="15" column="9"/>
+            <symbol>m_uuid</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;m_lastReportSec&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_lastReportSec&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="18" column="9"/>
+            <symbol>m_lastReportSec</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;QAsioTcpsocket&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;QAsioTcpsocket&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="13" column="5"/>
+            <symbol>QAsioTcpsocket</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;run&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;run&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_clientnode_basetrans.h" line="29" column="7" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\pipeline\zp_pltaskbase.h" line="25" column="15" info="Virtual function in base class"/>
+            <symbol>run</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;disconnectFromHost&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;disconnectFromHost&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="21" column="10" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\tcpabstractsocket.h" line="53" column="18" info="Virtual function in base class"/>
+            <symbol>disconnectFromHost</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;setSocketOption&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;setSocketOption&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="23" column="18" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\tcpabstractsocket.h" line="62" column="18" info="Virtual function in base class"/>
+            <symbol>setSocketOption</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;getSocketOption&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;getSocketOption&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="25" column="33" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\tcpabstractsocket.h" line="64" column="33" info="Virtual function in base class"/>
+            <symbol>getSocketOption</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;hostConnected&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;hostConnected&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="31" column="18" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\tcpabstractsocket.h" line="107" column="18" info="Virtual function in base class"/>
+            <symbol>hostConnected</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;sendData&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;sendData&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\qasiotcpsocket.h" line="32" column="10" info="Function in derived class"/>
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\QAsioSocket\include\tcpabstractsocket.h" line="85" column="18" info="Virtual function in base class"/>
+            <symbol>sendData</symbol>
+        </error>
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical conjunction always evaluates to false: id &gt;= 0x01 &amp;&amp; id &lt;= 0xFFFFFFFFFFFFFFFE." verbose="Logical conjunction always evaluates to false: id &gt;= 0x01 &amp;&amp; id &lt;= 0xFFFFFFFFFFFFFFFE. Are these conditions necessary? Did you intend to use || instead? Are the numbers correct? Are you comparing the correct variables?" cwe="570" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="53" column="26"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;rc&apos; is assigned a value that is never used." verbose="Variable &apos;rc&apos; is assigned a value that is never used." cwe="563" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="131" column="16"/>
+            <symbol>rc</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;retlen&apos; is assigned a value that is never used." verbose="Variable &apos;retlen&apos; is assigned a value that is never used." cwe="563" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="132" column="20"/>
+            <symbol>retlen</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;rc&apos; is assigned a value that is never used." verbose="Variable &apos;rc&apos; is assigned a value that is never used." cwe="563" file0="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp">
+            <location file="E:\Share\qt-project\MdvrUgd\BSD_MDVR_UGD\UgdServer\ZoomPipeline\smartlink\st_clientnode_basetrans.cpp" line="158" column="24"/>
+            <symbol>rc</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h:62:18" call-funcname="setSocketOption" call-argnr="3" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h" line="68" col="24" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h:62:18" call-funcname="setSocketOption" call-argnr="2" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h" line="71" col="24" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h:127:17" call-funcname="setState" call-argnr="1" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h" line="90" col="17" call-argexpr="UnconnectedState" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/qasiotcpserver.h:34:10" call-funcname="setSocketOption" call-argnr="2" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/qasiotcpserver.h" line="28" col="24" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/qasiotcpserver.h:34:10" call-funcname="setSocketOption" call-argnr="3" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/qasiotcpserver.h" line="31" col="24" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h:85:18" call-funcname="sendData" call-argnr="1" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h" line="60" col="9" my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/QAsioSocket/include/tcpabstractsocket.h:59:17" my-argnr="1"/>
+<function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_client_protocol.h:17:18" call-funcname="packing" call-argnr="2" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp" line="282" col="19" my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.h:52:18" my-argnr="2"/>
+<function-call call-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:25:10" call-funcname="print_data" call-argnr="1" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.cpp" line="292" col="9" my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_clientnode_basetrans.h:53:18" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:27:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="43" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="51" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:31:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="61" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:33:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="75" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:35:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="83" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:37:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="91" col="20" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:27:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="43" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:27:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="45" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="51" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="55" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:31:17" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="61" col="5" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:31:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="69" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:33:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="75" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:33:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="76" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:35:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="83" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:35:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="84" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:37:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="91" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:37:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="93" col="6" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:27:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="45" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:29:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="55" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:31:17" my-argnr="3" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="69" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:33:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="75" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:33:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="76" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:35:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="83" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:35:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="84" col="6" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:37:21" my-argnr="1" my-argname="dst" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="91" col="20" value="0"/>
+    <unsafe-usage my-id="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h:37:21" my-argnr="2" my-argname="pos" file="E:/Share/qt-project/MdvrUgd/BSD_MDVR_UGD/UgdServer/ZoomPipeline/smartlink/st_packet_tool.h" line="93" col="6" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="uuid" lineNumber="21"/>
+    <functiondecl functionName="setClientSock" lineNumber="25"/>
+    <functiondecl functionName="sock" lineNumber="34"/>
+    <functiondecl functionName="uuidValid" lineNumber="38"/>
+    <functiondecl functionName="lastActiveTime" lineNumber="42"/>
+    <functiondecl functionName="bytesLeft" lineNumber="46"/>
+    <functiondecl functionName="bIsValidUserId" lineNumber="51"/>
+    <functiondecl functionName="run" lineNumber="57"/>
+    <functiondecl functionName="push_new_data" lineNumber="114"/>
+    <functiondecl functionName="filter_message" lineNumber="128"/>
+    <functiondecl functionName="deal_current_message_block" lineNumber="220"/>
+    <functiondecl functionName="sendPacket" lineNumber="277"/>
+    <functiondecl functionName="sendData" lineNumber="288"/>
+    <functiondecl functionName="CheckHeartBeating" lineNumber="300"/>
+    <functioncall functionName="BdAddNewCrcVersionJsonParseError_E"/>
+    <functioncall functionName="BdAddNewMcuTypeJsonParseError_E"/>
+    <functioncall functionName="BdAddProductInfoFalied_E"/>
+    <functioncall functionName="BdAddUserFailed_E"/>
+    <functioncall functionName="BdCrcVersionDontExists_E"/>
+    <functioncall functionName="BdCreateFileFailed_E"/>
+    <functioncall functionName="BdDataTransmissionError_E"/>
+    <functioncall functionName="BdDeleteProductInfoFailed_E"/>
+    <functioncall functionName="BdEditUserFailed_E"/>
+    <functioncall functionName="BdExecutionFailed_E"/>
+    <functioncall functionName="BdExecutionSucceeded_E"/>
+    <functioncall functionName="BdGetUserListFailed_E"/>
+    <functioncall functionName="BdGroupFileInfoParseError_E"/>
+    <functioncall functionName="BdJsonFormatError_E"/>
+    <functioncall functionName="BdJsonParseError_E"/>
+    <functioncall functionName="BdMcuTypeDontExists_E"/>
+    <functioncall functionName="BdMcuTypeExists_E"/>
+    <functioncall functionName="BdMcuTypeInfoParseError_E"/>
+    <functioncall functionName="BdOpenFileFialed_E"/>
+    <functioncall functionName="BdOpenProductInfoFileFailed_E"/>
+    <functioncall functionName="BdProductDontExist_E"/>
+    <functioncall functionName="BdProductInfoParseError_E"/>
+    <functioncall functionName="BdProductMcuInfoParseError_E"/>
+    <functioncall functionName="BdRemoveEventFailed_E"/>
+    <functioncall functionName="BdRemoveFileFailed_E"/>
+    <functioncall functionName="BdRemoveUserFailed_E"/>
+    <functioncall functionName="BdRequestAddEvent_E"/>
+    <functioncall functionName="BdRequestAddFileToGroupFile_E"/>
+    <functioncall functionName="BdRequestAddGroupFileVersion_E"/>
+    <functioncall functionName="BdRequestAddGroupFile_E"/>
+    <functioncall functionName="BdRequestAddLog_E"/>
+    <functioncall functionName="BdRequestAddMcuType_E"/>
+    <functioncall functionName="BdRequestAddNewCrcVersion_E"/>
+    <functioncall functionName="BdRequestAddNewMcuVersion_E"/>
+    <functioncall functionName="BdRequestAddProductInfo_E"/>
+    <functioncall functionName="BdRequestAddUser_E"/>
+    <functioncall functionName="BdRequestDeleteFile_E"/>
+    <functioncall functionName="BdRequestDeleteProductInfo_E"/>
+    <functioncall functionName="BdRequestDownloadFile_E"/>
+    <functioncall functionName="BdRequestEditUser_E"/>
+    <functioncall functionName="BdRequestGetUserList_E"/>
+    <functioncall functionName="BdRequestQueryDefaultVersionInfo_E"/>
+    <functioncall functionName="BdRequestQueryDeviceClientEvents_E"/>
+    <functioncall functionName="BdRequestQueryEventStatus_E"/>
+    <functioncall functionName="BdRequestQueryLog_E"/>
+    <functioncall functionName="BdRequestQueryPcClientEvents_E"/>
+    <functioncall functionName="BdRequestQueryProductInfo_E"/>
+    <functioncall functionName="BdRequestQueryProductList_E"/>
+    <functioncall functionName="BdRequestQuerySpecifyVersionInfo_E"/>
+    <functioncall functionName="BdRequestQueryTerminalInfoLog_E"/>
+    <functioncall functionName="BdRequestRemoveCrcVersion_E"/>
+    <functioncall functionName="BdRequestRemoveEvent_E"/>
+    <functioncall functionName="BdRequestRemoveFilesFromGroupFile_E"/>
+    <functioncall functionName="BdRequestRemoveGroupFileVersion_E"/>
+    <functioncall functionName="BdRequestRemoveGroupFile_E"/>
+    <functioncall functionName="BdRequestRemoveMcuType_E"/>
+    <functioncall functionName="BdRequestRemoveMcuVersion_E"/>
+    <functioncall functionName="BdRequestRemoveUser_E"/>
+    <functioncall functionName="BdRequestSaveProductInfo_E"/>
+    <functioncall functionName="BdRequestSetDefaultCrcVersion_E"/>
+    <functioncall functionName="BdRequestSetDefaultGroupFileVersion_E"/>
+    <functioncall functionName="BdRequestSetDefaultMcuVersion_E"/>
+    <functioncall functionName="BdRequestSetEventStatus_E"/>
+    <functioncall functionName="BdRequestSetTerminalInfo_E"/>
+    <functioncall functionName="BdRequestStopDownloadFile_E"/>
+    <functioncall functionName="BdRequestStopUploadFile_E"/>
+    <functioncall functionName="BdRequestUploadFile_E"/>
+    <functioncall functionName="BdSaveProductInfoFileFailed_E"/>
+    <functioncall functionName="BdUploadFileRequiredInfoError_E"/>
+    <functioncall functionName="BdUserAuthAdmin_E"/>
+    <functioncall functionName="BdUserAuthGeneral_E"/>
+    <functioncall functionName="BdUserNotLogged_E"/>
+    <functioncall functionName="Broadcast"/>
+    <functioncall functionName="ConnectedState"/>
+    <functioncall functionName="ConnectingState"/>
+    <functioncall functionName="EVENT_INFO_S"/>
+    <functioncall functionName="EventGetDeviceFiles_E"/>
+    <functioncall functionName="EventRevDeviceNum_E"/>
+    <functioncall functionName="EventRevIdTypeMax_E"/>
+    <functioncall functionName="EventRevLicenseNum_E"/>
+    <functioncall functionName="EventRevPhoneNum_E"/>
+    <functioncall functionName="EventRevVideoId_E"/>
+    <functioncall functionName="EventStatusExecuting_E"/>
+    <functioncall functionName="EventStatusFailed_E"/>
+    <functioncall functionName="EventStatusSucceed_E"/>
+    <functioncall functionName="EventStatusWaitting_E"/>
+    <functioncall functionName="EventTypeMax_E"/>
+    <functioncall functionName="EventUpgradeDeviceCrc_E"/>
+    <functioncall functionName="EventUpgradeDeviceMcu_E"/>
+    <functioncall functionName="EventUpgradeDevicePara_E"/>
+    <functioncall functionName="IP_TCP_NODelay"/>
+    <functioncall functionName="Keep_Live"/>
+    <functioncall functionName="Linger"/>
+    <functioncall functionName="Multicast_Loopback"/>
+    <functioncall functionName="Multicast_TTL"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="QAsioTcpsocket"/>
+    <functioncall functionName="QByteArray"/>
+    <functioncall functionName="QChar"/>
+    <functioncall functionName="QDateTime"/>
+    <functioncall functionName="QObject"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="QThread"/>
+    <functioncall functionName="QTimer"/>
+    <functioncall functionName="Q_DISABLE_COPY"/>
+    <functioncall functionName="ReasonFileOpenFialed_E"/>
+    <functioncall functionName="Receive_Buffer_Size"/>
+    <functioncall functionName="Receive_Low_Watermark"/>
+    <functioncall functionName="Reuse_Address"/>
+    <functioncall functionName="Send_Buffer_Size"/>
+    <functioncall functionName="Send_Low_Watermark"/>
+    <functioncall functionName="SocketOption"/>
+    <functioncall functionName="TcpAbstractSocket"/>
+    <functioncall functionName="UnconnectedState"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="arg"/>
+    <functioncall functionName="bIsValidUserId"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="bytesWritten"/>
+    <functioncall functionName="bytes_transferred"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="connected"/>
+    <functioncall functionName="currentSecsSinceEpoch"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="dataLen"/>
+    <functioncall functionName="deal_current_message_block"/>
+    <functioncall functionName="disConnected"/>
+    <functioncall functionName="dtarray"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="erroString"/>
+    <functioncall functionName="erro_code"/>
+    <functioncall functionName="erro_string"/>
+    <functioncall functionName="evt_Message"/>
+    <functioncall functionName="evt_SendDataToClient"/>
+    <functioncall functionName="evt_close_client"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="filter_message"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="frame_escape"/>
+    <functioncall functionName="frame_reverse_escape"/>
+    <functioncall functionName="get8bytes"/>
+    <functioncall functionName="handle_id"/>
+    <functioncall functionName="haveErro"/>
+    <functioncall functionName="heartBeatingThrd"/>
+    <functioncall functionName="hostConnected"/>
+    <functioncall functionName="hostFinded"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="ip"/>
+    <functioncall functionName="isEmpty"/>
+    <functioncall functionName="isEnble"/>
+    <functioncall functionName="isNull"/>
+    <functioncall functionName="len"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="lock"/>
+    <functioncall functionName="m_DeviceID"/>
+    <functioncall functionName="m_UplinkFID"/>
+    <functioncall functionName="m_currentReadOffset"/>
+    <functioncall functionName="m_nMessageBlockSize"/>
+    <functioncall functionName="m_receivedBlock"/>
+    <functioncall functionName="m_uuid"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="offset"/>
+    <functioncall functionName="option"/>
+    <functioncall functionName="pClientSock"/>
+    <functioncall functionName="pClientTable"/>
+    <functioncall functionName="pPacket"/>
+    <functioncall functionName="packing"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="pop_front"/>
+    <functioncall functionName="pos"/>
+    <functioncall functionName="print_data"/>
+    <functioncall functionName="prot"/>
+    <functioncall functionName="pso"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="qint64"/>
+    <functioncall functionName="quint64"/>
+    <functioncall functionName="regisitClientUUID"/>
+    <functioncall functionName="res"/>
+    <functioncall functionName="retlen"/>
+    <functioncall functionName="sendData"/>
+    <functioncall functionName="sentReadData"/>
+    <functioncall functionName="setSocketOption"/>
+    <functioncall functionName="setState"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="soc"/>
+    <functioncall functionName="sock"/>
+    <functioncall functionName="source_id"/>
+    <functioncall functionName="st"/>
+    <functioncall functionName="st_clientNode_baseTrans"/>
+    <functioncall functionName="stateChange"/>
+    <functioncall functionName="state_"/>
+    <functioncall functionName="struct"/>
+    <functioncall functionName="tagConnectionPara"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="tr"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="truncate"/>
+    <functioncall functionName="type"/>
+    <functioncall functionName="uint16_t"/>
+    <functioncall functionName="uint32_t"/>
+    <functioncall functionName="uint64_t"/>
+    <functioncall functionName="unlock"/>
+    <functioncall functionName="updateActiveTime"/>
+    <functioncall functionName="valid_len"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="zp_ClusterNode"/>
+    <functioncall functionName="zp_netTransThread"/>
+    <functioncall functionName="zp_plTaskBase"/>
+    <functioncall functionName="zp_plWorkingThread"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,32 @@
+{
+    "ZH402": {
+        "CrcDefaultVersion": {
+            "Date": "",
+            "FileName": "",
+            "FileSize": "1686826844",
+            "IsDefault": false,
+            "Message": "",
+            "Name": ""
+        },
+        "CrcVersionList": [
+        ],
+        "Date": "2021/08/02 10:43:25",
+        "GroupFileDefaultVersion": {
+            "Date": "",
+            "FileInfos": [
+            ],
+            "IsDefault": false,
+            "Message": "",
+            "Name": "",
+            "SavePath": ""
+        },
+        "GroupFileInfos": [
+        ],
+        "McuInfos": [
+        ],
+        "ProductDesp": "ZH402",
+        "ProductName": "ZH402",
+        "ProductTypeId": "0",
+        "SaveFilePath": "./version/ZH402/"
+    }
+}

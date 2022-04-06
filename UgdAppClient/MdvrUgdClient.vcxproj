@@ -1,0 +1,782 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9040C2CC-BFD6-3918-A8FF-7C4C4429BD33}</ProjectGuid>
+    <RootNamespace>MdvrUgdClient</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
+  <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>MdvrUgdClient</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>MdvrUgdClient</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" /><Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')"><Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." /></Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" /><ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')"><Import Project="$(QtMsBuild)\qt_defaults.props" /></ImportGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><OutDir>debug\</OutDir><IntDir>debug\</IntDir><TargetName>MdvrUgdClient</TargetName><IgnoreImportLibrary>true</IgnoreImportLibrary></PropertyGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><OutDir>release\</OutDir><IntDir>release\</IntDir><TargetName>MdvrUgdClient</TargetName><IgnoreImportLibrary>true</IgnoreImportLibrary><LinkIncremental>false</LinkIncremental></PropertyGroup><PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><QtInstall>5.12.5_msvc2017_64</QtInstall><QtModules>core;sql;network;gui;widgets</QtModules></PropertyGroup><PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><QtInstall>5.12.5_msvc2017_64</QtInstall><QtModules>core;sql;network;gui;widgets</QtModules></PropertyGroup><ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')"><Import Project="$(QtMsBuild)\qt.props" /></ImportGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\UgdServer\ZoomPipeline\network;..\UgdServer\ZoomPipeline\smartlink;network;info;logger;base;base-ui;E:\boost_1_77_0;E:\boost_1_77_0\boost;release;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    <MultiProcessorCompilation>true</MultiProcessorCompilation></ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\openssl\lib;C:\Utils\my_sql\mysql-5.6.11-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\MdvrUgdClient.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  <QtMoc><CompilerFlavor>msvc</CompilerFlavor><Include>./$(Configuration)/moc_predefs.h</Include><ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription><DynamicSource>output</DynamicSource><QtMocDir>$(Configuration)</QtMocDir><QtMocFileName>moc_%(Filename).cpp</QtMocFileName></QtMoc><QtRcc><ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription><Compression>default</Compression><InitFuncName>images</InitFuncName><QtRccDir>$(Configuration)</QtRccDir><QtRccFileName>qrc_%(Filename).cpp</QtRccFileName></QtRcc><QtUic><ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription><QtUicDir>$(ProjectDir)</QtUicDir><QtUicFileName>ui_%(Filename).h</QtUicFileName></QtUic></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\UgdServer\ZoomPipeline\network;..\UgdServer\ZoomPipeline\smartlink;network;info;logger;base;base-ui;E:\boost_1_77_0;E:\boost_1_77_0\boost;debug;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    <MultiProcessorCompilation>true</MultiProcessorCompilation></ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\openssl\lib;C:\Utils\my_sql\mysql-5.6.11-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\MdvrUgdClient.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  <QtMoc><CompilerFlavor>msvc</CompilerFlavor><Include>./$(Configuration)/moc_predefs.h</Include><ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription><DynamicSource>output</DynamicSource><QtMocDir>$(Configuration)</QtMocDir><QtMocFileName>moc_%(Filename).cpp</QtMocFileName></QtMoc><QtRcc><ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription><Compression>default</Compression><InitFuncName>images</InitFuncName><QtRccDir>$(Configuration)</QtRccDir><QtRccFileName>qrc_%(Filename).cpp</QtRccFileName></QtRcc><QtUic><ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription><QtUicDir>$(ProjectDir)</QtUicDir><QtUicFileName>ui_%(Filename).h</QtUicFileName></QtUic></ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="base-ui\CHintWidget.cpp" />
+    <ClCompile Include="info\caddeventdlg.cpp" />
+    <ClCompile Include="info\caddgroupfiledlg.cpp" />
+    <ClCompile Include="info\caddproductdlg.cpp" />
+    <ClCompile Include="info\cadduserdlg.cpp" />
+    <ClCompile Include="info\caddversindlg.cpp" />
+    <ClCompile Include="info\cadministratordlg.cpp" />
+    <ClCompile Include="network\cbdugdclientprotocol.cpp" />
+    <ClCompile Include="base-ui\ccalendardlg.cpp" />
+    <ClCompile Include="ccommon.cpp" />
+    <ClCompile Include="info\celidelabel.cpp" />
+    <ClCompile Include="info\ceventitem.cpp" />
+    <ClCompile Include="ceventsdlg.cpp" />
+    <ClCompile Include="info\cgeneraluseraddproductdlg.cpp" />
+    <ClCompile Include="info\cgroupfileitem.cpp" />
+    <ClCompile Include="cloginfodlg.cpp" />
+    <ClCompile Include="info\cmcuinfodlg.cpp" />
+    <ClCompile Include="info\cproductitem.cpp" />
+    <ClCompile Include="info\cproductversioninfo.cpp" />
+    <ClCompile Include="network\ctcpclient.cpp" />
+    <ClCompile Include="network\ctcpclienttest.cpp" />
+    <ClCompile Include="info\cuseritem.cpp" />
+    <ClCompile Include="info\cversioninfo.cpp" />
+    <ClCompile Include="logindlg.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="base\myautomutex.cpp" />
+    <ClCompile Include="base\mythread.cpp" />
+    <ClCompile Include="network\qghtcpclient.cpp" />
+    <ClCompile Include="logger\st_logger.cpp" />
+    <ClCompile Include="..\UgdServer\ZoomPipeline\smartlink\st_message.cpp" />
+    <ClCompile Include="..\UgdServer\ZoomPipeline\smartlink\st_packet_tool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="base-ui\CHintWidget.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\caddeventdlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\caddgroupfiledlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\caddproductdlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\cadduserdlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\caddversindlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\cadministratordlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="network\cbdugdclientprotocol.h" />
+    <QtMoc Include="base-ui\ccalendardlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="ccommon.h" />
+    <QtMoc Include="info\celidelabel.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\ceventitem.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="ceventsdlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\cgeneraluseraddproductdlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\cgroupfileitem.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="cloginfodlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\cmcuinfodlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\cproductitem.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\cproductversioninfo.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="network\ctcpclient.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="network\ctcpclienttest.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\cuseritem.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="info\cversioninfo.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="logindlg.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="mainwindow.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="base\myautomutex.h" />
+    <QtMoc Include="base\mythread.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="network\qghtcpclient.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="logger\st_logger.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="..\UgdServer\ZoomPipeline\smartlink\st_packet_tool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\translations\enl2chinese_sim.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="info\caddeventdlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\caddgroupfiledlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\caddproductdlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\cadduserdlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\caddversindlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\cadministratordlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="base-ui\ccalendardlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\ceventitem.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="ceventsdlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\cgeneraluseraddproductdlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\cgroupfileitem.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="cloginfodlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\cmcuinfodlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\cproductitem.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\cproductversioninfo.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\cuseritem.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="info\cversioninfo.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="logindlg.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="mainwindow.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\add_device.png" />
+    <None Include="images\add_mcu.png" />
+    <None Include="images\administrator.png" />
+    <None Include="images\checked.png" />
+    <None Include="images\client_refresh.png" />
+    <None Include="images\cn1.png" />
+    <None Include="images\cn10.png" />
+    <None Include="images\cn11.png" />
+    <None Include="images\cn12.png" />
+    <None Include="images\cn13.png" />
+    <None Include="images\cn2.png" />
+    <None Include="images\cn3.png" />
+    <None Include="images\cn4.png" />
+    <None Include="images\cn5.png" />
+    <None Include="images\cn6.png" />
+    <None Include="images\cn7.png" />
+    <None Include="images\cn8.png" />
+    <None Include="images\cn9.png" />
+    <None Include="images\delete.png" />
+    <None Include="images\delete_device.png" />
+    <None Include="images\delete_mcu.png" />
+    <None Include="images\download.png" />
+    <None Include="images\edit_event.png" />
+    <None Include="images\events.png" />
+    <QtRcc Include="images.qrc">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtRcc>
+    <None Include="images\log_search.png" />
+    <None Include="images\product_refresh.png" />
+    <None Include="images\reset_event.png" />
+    <None Include="images\save_product.png" />
+    <None Include="images\stop_transmission.png" />
+    <None Include="images\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\MdvrUgdClient_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" /><ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')"><Import Project="$(QtMsBuild)\qt.targets" /></ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

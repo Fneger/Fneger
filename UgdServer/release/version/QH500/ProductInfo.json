@@ -1,0 +1,32 @@
+{
+    "QH500": {
+        "CrcDefaultVersion": {
+            "Date": "",
+            "FileName": "",
+            "FileSize": "334212958",
+            "IsDefault": false,
+            "Message": "",
+            "Name": ""
+        },
+        "CrcVersionList": [
+        ],
+        "Date": "2021/08/02 10:35:16",
+        "GroupFileDefaultVersion": {
+            "Date": "",
+            "FileInfos": [
+            ],
+            "IsDefault": false,
+            "Message": "",
+            "Name": "",
+            "SavePath": ""
+        },
+        "GroupFileInfos": [
+        ],
+        "McuInfos": [
+        ],
+        "ProductDesp": "QH500",
+        "ProductName": "QH500",
+        "ProductTypeId": "0",
+        "SaveFilePath": "./version/QH500/"
+    }
+}

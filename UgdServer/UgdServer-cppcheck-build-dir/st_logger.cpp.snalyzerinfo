@@ -1,0 +1,35 @@
+TcpAbstractSocket
+TcpAbstractSocket
+write call:[data,sendData,size] noreturn:[sendData]
+write call:[sendData] noreturn:[sendData]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+socketDescriptor
+errorCode
+erro
+state
+peerIp
+peerPort
+haveErro call:[clear,haveErro,setState] noreturn:[haveErro]
+hostConnected call:[hostConnected] noreturn:[hostConnected]
+haveErro call:[disConnected,erroString,stateChange] noreturn:[disConnected]
+hostConnected call:[connected,setState,stateChange] noreturn:[connected]
+readDataed call:[QByteArray,sentReadData]
+writeDataed call:[bytesWritten] noreturn:[bytesWritten]
+finedHosted call:[hostFinded,setState] noreturn:[hostFinded]
+heartTimeOut
+handshaked
+setState
+setSocketPtr
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+zp_plTaskBase
+currentDatabaseConnections
+TerminateMe
+st_logger
+setZPMainFrame
+maxFileSize
+logLevel
+setLogLevel
+CreateNewLogFile call:[QFile,applicationDirPath,applicationName,close,currentDateTime,deleteLater,exists,file,isOpen,mkpath,open,remove,rename] noreturn:[close,remove]
+MessageOutput call:[CreateNewLogFile,QString,append,arg,currentDateTime,flush,instance,lock,pos,printLog,stream,toString,toUTC,unlock] noreturn:[CreateNewLogFile,printLog,unlock]

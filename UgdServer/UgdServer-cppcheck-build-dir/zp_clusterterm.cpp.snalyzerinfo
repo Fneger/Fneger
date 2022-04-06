@@ -1,0 +1,67 @@
+TcpAbstractSocket
+TcpAbstractSocket
+write call:[data,sendData,size] noreturn:[sendData]
+write call:[sendData] noreturn:[sendData]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+socketDescriptor
+errorCode
+erro
+state
+peerIp
+peerPort
+haveErro call:[clear,haveErro,setState] noreturn:[haveErro]
+hostConnected call:[hostConnected] noreturn:[hostConnected]
+haveErro call:[disConnected,erroString,stateChange] noreturn:[disConnected]
+hostConnected call:[connected,setState,stateChange] noreturn:[connected]
+readDataed call:[QByteArray,sentReadData]
+writeDataed call:[bytesWritten] noreturn:[bytesWritten]
+finedHosted call:[hostFinded,setState] noreturn:[hostFinded]
+heartTimeOut
+handshaked
+setState
+setSocketPtr
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+setSocketOption call:[setSocketOption] noreturn:[setSocketOption]
+zp_plTaskBase
+zp_ClusterTerm call:[bind,connect,zp_net_Engine,zp_pipeline] noreturn:[bind]
+setClientNums
+clientNums
+default_factory call:[zp_ClusterNode] noreturn:[zp_ClusterNode]
+SetNodeFactory
+LANPort
+LANAddr
+setLANAddr
+setLANPort
+PublishPort
+PublishAddr
+setPublishAddr
+setPublishPort
+netEng
+taskEng
+setName
+name
+heartBeatingThrdHold
+setHeartBeatingThrd
+StartListen call:[AddListeningAddress] noreturn:[AddListeningAddress]
+JoinCluster call:[connectTo] noreturn:[connectTo]
+canExit call:[CanExit,canClose] noreturn:[CanExit]
+SvrNames call:[keys,lock,push_back,termName,unlock] noreturn:[push_back]
+SvrLANAddr call:[addrLAN,contains,lock,unlock] noreturn:[addrLAN]
+SvrLANPort call:[contains,lock,portLAN,unlock] noreturn:[portLAN]
+SvrPubAddr call:[addrPub,contains,lock,unlock] noreturn:[addrPub]
+SvrPubPort call:[contains,lock,portPub,unlock] noreturn:[portPub]
+remoteClientNums call:[clientNums,contains,lock,unlock] noreturn:[clientNums]
+regisitNewServer call:[contains,evt_Message,length,lock,termName,tr,unlock]
+SvrNodeFromName call:[contains,lock,unlock]
+SvrNodeFromSocket call:[contains,lock,unlock]
+on_evt_NewClientConnected call:[SendHelloPackage,assert,connect,contains,lock,m_factory,unlock] noreturn:[SendHelloPackage]
+on_evt_ClientEncrypted call:[SendHelloPackage,assert,connect,contains,lock,m_factory,unlock] noreturn:[SendHelloPackage]
+on_evt_ClientDisconnected call:[contains,deleteLater,disconnect,evt_NewSvrDisconnected,length,lock,push_back,ref,remove,removeAll,termName,unlock] noreturn:[deleteLater,evt_NewSvrDisconnected,push_back,remove]
+on_evt_Data_recieved call:[assert,connect,contains,lock,m_factory,pushTask,push_new_data,unlock] noreturn:[pushTask,unlock]
+KickDeadClients call:[CheckHeartBeating,begin,end,lock,unlock,value] noreturn:[CheckHeartBeating,unlock]
+on_evt_Data_transferred call:[evt_RemoteData_transferred] noreturn:[evt_RemoteData_transferred]
+BroadcastServers call:[LANAddr,LANPort,PublishAddr,PublishPort,SendDataToClient,addrLAN,addrPub,array,c_str,data,keys,length,lock,name,netEng,portLAN,portPub,size,sizeof,sock,strncpy,termName,toStdString,toString,unlock] noreturn:[SendDataToClient,unlock]
+SendHeartBeatings call:[SendDataToClient,array,data,keys,lock,netEng,sizeof,sock,unlock] noreturn:[SendDataToClient,unlock]
+SendDataToRemoteServer call:[SendDataToClient,array,constData,contains,data,lock,memcpy,netEng,size,sizeof,sock,unlock] noreturn:[SendDataToClient,unlock]
+minPayloadServer call:[PublishAddr,PublishPort,addrPub,c_str,clientNums,keys,lock,name,portPub,size,strncpy,termName,toStdString,toString,unlock] noreturn:[termName]
