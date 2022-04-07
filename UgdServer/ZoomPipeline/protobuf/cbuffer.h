@@ -206,11 +206,14 @@ public:
     void printData();
     static void printData(uint8_t *pData, int nLen);
 
-private:
-
-
+	static const int S_BUFFER_MAX_SIZE = 10 * 1024 * 1024;
 
 private:
+
+
+
+private:
+	
     std::vector<char> buffer_;
     volatile size_t writeIdx_;
     volatile size_t readIdx_;

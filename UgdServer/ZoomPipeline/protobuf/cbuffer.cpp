@@ -6,6 +6,7 @@ CBuffer::CBuffer(size_t nSize)
     , readIdx_(0)
 {
     buffer_.resize(nSize);
+	memset(buffer_.data(), 0, nSize);
 }
 
 CBuffer::~CBuffer()
@@ -18,6 +19,8 @@ size_t CBuffer::append(const void *buf, size_t bufLen)
     if(writableBytes() < bufLen)
     {
         qDebug("Buffer not enough space,reallocate memory!\n");
+		if (bufLen > S_BUFFER_MAX_SIZE)
+			return 0;
         ensureWritableBytes(bufLen);
     }
     char *pStart = buffer_.data();
@@ -52,6 +55,7 @@ void CBuffer::clear()
 
 void CBuffer::ensureWritableBytes(size_t len)
 {
+	assert(len <= S_BUFFER_MAX_SIZE);
     if (writableBytes() < len)
     {
         if(readableBytes() > 0)

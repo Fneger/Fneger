@@ -94,7 +94,7 @@ int CClientNode::run()
     {
         buffer_.clear();
         {
-            int msgLen, totalLen = 0;
+            quint32 msgLen, totalLen = 0;
             {
                 QMutexLocker lock(&rawDatasMutex_);
                 QByteArray &ba = rawDatas_.front();
@@ -105,6 +105,11 @@ int CClientNode::run()
             }
             if(msgLen == 0 || totalLen < msgLen) //消息未接收完成
                 return -1;
+			else if (msgLen > CBuffer::S_BUFFER_MAX_SIZE ) //非法数据包
+			{
+				QMutexLocker lock(&rawDatasMutex_);
+				rawDatas_.clear();
+			}
             totalLen = 0;
             {
                 QMutexLocker lock(&rawDatasMutex_);
