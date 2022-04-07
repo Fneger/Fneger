@@ -109,6 +109,7 @@ int CClientNode::run()
 			{
 				QMutexLocker lock(&rawDatasMutex_);
 				rawDatas_.clear();
+				return -1;
 			}
             totalLen = 0;
             {
