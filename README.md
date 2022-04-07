@@ -1,3 +1,3 @@
 #服务端高并发开发学习
 
-其中使用了protobuf、gflags、zlib、boost库
+其中使用了protobuf、gflags、zlib、boost库，注意相关库debug和release版本的区分，debug模式使用release版本的库，可能出现无法预料的错误
