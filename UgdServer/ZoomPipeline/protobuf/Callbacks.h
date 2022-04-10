@@ -67,7 +67,7 @@ inline ::boost::shared_ptr<To> down_pointer_cast(const ::boost::shared_ptr<From>
   }
 
 #ifndef NDEBUG
-  assert(f == NULL || dynamic_cast<To*>(get_pointer(f)) != NULL);
+  //assert(f == NULL || dynamic_cast<To*>(get_pointer(f)) != NULL);
 #endif
   return ::boost::static_pointer_cast<To>(f);
 }

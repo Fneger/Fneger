@@ -25,29 +25,21 @@ CGarbageCollector *CGarbageCollector::Instance()
     return S_pThis;
 }
 
-void CGarbageCollector::sockPutInTrash(boost::shared_ptr<CAsioTcpSocket> &garbage)
+void CGarbageCollector::sockPutInTrash(TcpSocketPtr &garbage)
 {
     garbage->updateActiveTime();
     boost::mutex::scoped_lock lock(m_sock_trash_mutex);
     m_sock_trash.push_back(garbage);
 }
 
-#ifdef USE_PROTOBUF
-void CGarbageCollector::nodePutInTrash(boost::shared_ptr<CClientNode> &garbage)
-#else
-void CGarbageCollector::nodePutInTrash(boost::shared_ptr<st_clientNode_baseTrans> &garbage)
-#endif
+void CGarbageCollector::nodePutInTrash(NodePtr &garbage)
 {
     garbage->updateActiveTime();
     boost::mutex::scoped_lock lock(m_node_trash_mutex);
     m_node_trash.push_back(garbage);
 }
 
-#ifdef USE_PROTOBUF
-void CGarbageCollector::nodePutInNoactive(boost::shared_ptr<CClientNode> &garbage)
-#else
-void CGarbageCollector::nodePutInNoactive(boost::shared_ptr<st_clientNode_baseTrans> &garbage)
-#endif
+void CGarbageCollector::nodePutInNoactive(NodePtr &garbage)
 {
     garbage->updateActiveTime();
     garbage->setClientSock(nullptr);
@@ -73,28 +65,16 @@ size_t CGarbageCollector::nodeNoactiveSize()
     return m_node_noactive.size();
 }
 
-#ifdef USE_PROTOBUF
-boost::shared_ptr<CClientNode> CGarbageCollector::findNodeNoactive(qint64 nId)
-#else
-boost::shared_ptr<st_clientNode_baseTrans> CGarbageCollector::findNodeNoactive(quint64 nId)
-#endif
+NodePtr CGarbageCollector::findNodeNoactive(quint64 nId)
 {
     boost::mutex::scoped_lock lock(m_node_noactive_mutex);
-#ifdef USE_PROTOBUF
-    boost::shared_ptr<CClientNode> pNode;
-#else
-    boost::shared_ptr<st_clientNode_baseTrans> pNode;
-#endif
+    NodePtr pNode;
     if(m_node_noactive.find(nId) != m_node_noactive.end())
     {
         pNode = m_node_noactive[nId];
         if(pNode->uuid() != nId)
         {
-#ifdef USE_PROTOBUF
-            return boost::shared_ptr<CClientNode>();
-#else
-            return boost::shared_ptr<st_clientNode_baseTrans>();
-#endif
+            return NodePtr();
         }
         m_node_noactive.erase(nId);
     }
@@ -125,11 +105,11 @@ void CGarbageCollector::stopCollection()
     }
 }
 
-boost::shared_ptr<CAsioTcpSocket> CGarbageCollector::sockResumeRabish()
+TcpSocketPtr CGarbageCollector::sockResumeRabish()
 {
-    boost::shared_ptr<CAsioTcpSocket> pSock;
+    TcpSocketPtr pSock;
     boost::mutex::scoped_lock lock(m_sock_trash_mutex);
-    if(m_sock_trash.size() > 0)
+    if(!m_sock_trash.empty())
     {
         pSock = m_sock_trash.front();
         m_sock_trash.pop_front();
@@ -137,19 +117,11 @@ boost::shared_ptr<CAsioTcpSocket> CGarbageCollector::sockResumeRabish()
     return pSock;
 }
 
-#ifdef USE_PROTOBUF
-boost::shared_ptr<CClientNode> CGarbageCollector::nodeResumeRabish()
-#else
-boost::shared_ptr<ExampleServer::st_clientNode_baseTrans> CGarbageCollector::nodeResumeRabish()
-#endif
+NodePtr CGarbageCollector::nodeResumeRabish()
 {
-#ifdef USE_PROTOBUF
-    boost::shared_ptr<CClientNode> pNode;
-#else
-    boost::shared_ptr<st_clientNode_baseTrans> pNode;
-#endif
+    NodePtr pNode;
     boost::mutex::scoped_lock lock(m_node_trash_mutex);
-    if(m_node_trash.size() > 0)
+    if(!m_node_trash.empty())
     {
         pNode = m_node_trash.front();
         pNode->resetNode();
@@ -160,7 +132,6 @@ boost::shared_ptr<ExampleServer::st_clientNode_baseTrans> CGarbageCollector::nod
 
 void CGarbageCollector::run()
 {
-    size_t trashSize;
     qint64 currSec = QDateTime::currentSecsSinceEpoch();
     while (1) {
         if(m_quit_flag)
@@ -171,10 +142,9 @@ void CGarbageCollector::run()
         {
             msleep(10);
             boost::mutex::scoped_lock lock(m_sock_trash_mutex);
-            trashSize = m_sock_trash.size();
-            if(trashSize > 0)
+            if(!m_sock_trash.empty())
             {
-                boost::shared_ptr<CAsioTcpSocket> &pSock = m_sock_trash.front();
+                TcpSocketPtr &pSock = m_sock_trash.front();
                 if(currSec - pSock->activeTime() > S_GARBAGE_LIVE_TIME)
                     m_sock_trash.pop_front();
                 else
@@ -189,14 +159,9 @@ void CGarbageCollector::run()
         {
             msleep(10);
             boost::mutex::scoped_lock lock(m_node_trash_mutex);
-            trashSize = m_node_trash.size();
-            if(trashSize > 0)
+            if(!m_node_trash.empty())
             {
-#ifdef USE_PROTOBUF
-                boost::shared_ptr<CClientNode> &pNode = m_node_trash.front();
-#else
-                boost::shared_ptr<st_clientNode_baseTrans> &pNode = m_node_trash.front();
-#endif
+                NodePtr &pNode = m_node_trash.front();
                 if(currSec - pNode->activeTime() > S_GARBAGE_LIVE_TIME)
                     m_node_trash.pop_front();
                 else
@@ -207,15 +172,9 @@ void CGarbageCollector::run()
         }while(1);
 
         {
-#ifdef USE_PROTOBUF
-            std::vector<boost::shared_ptr<CClientNode>> delNodes;
-            boost::shared_ptr<CClientNode> pNode;
-            std::unordered_map<quint64, boost::shared_ptr<CClientNode>>::iterator it;
-#else
-            std::vector<boost::shared_ptr<st_clientNode_baseTrans>> delNodes;
-            boost::shared_ptr<st_clientNode_baseTrans> pNode;
-            std::unordered_map<quint64, boost::shared_ptr<st_clientNode_baseTrans>>::iterator it;
-#endif
+            std::vector<NodePtr> delNodes;
+            NodePtr pNode;
+            std::unordered_map<quint64, NodePtr>::iterator it;
 
             {
                 boost::mutex::scoped_lock lock(m_node_noactive_mutex);
@@ -228,11 +187,7 @@ void CGarbageCollector::run()
 
                 }
             }
-#ifdef USE_PROTOBUF
-            foreach (boost::shared_ptr<CClientNode> pNode, delNodes) {
-#else
-            foreach (boost::shared_ptr<st_clientNode_baseTrans> pNode, delNodes) {
-#endif
+            foreach (NodePtr pNode, delNodes) {
                 msleep(10);
                 nodePutInTrash(pNode);
                 boost::mutex::scoped_lock lock(m_node_noactive_mutex);

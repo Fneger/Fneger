@@ -15,6 +15,10 @@
 #include "csocketsession.h"
 
 class CAsioTcpSocket;
+typedef boost::weak_ptr<CAsioTcpSocket> TcpSocketWkPtr;
+typedef boost::shared_ptr<CAsioTcpSocket> TcpSocketPtr;
+typedef std::unordered_map<qint64, TcpSocketPtr> TcpSocketContainer;
+typedef std::unordered_map<qint64, TcpSocketWkPtr> WkTcpSocketContainer;
 
 namespace ZPNetwork{
 	class zp_net_Engine;
@@ -53,7 +57,7 @@ namespace ZPNetwork{
 
 		std::unordered_map<QObject *,QList<qint64> > m_buffer_sending_offset;
 		//The socket and the connection-direction, 0 is passive, 1 is postive.
-        std::unordered_map<qint64, boost::shared_ptr<CAsioTcpSocket>> m_clientList;
+        TcpSocketContainer m_clientList;
         volatile size_t m_clients_size;
 		int m_nPayLoad;
         //QMutex m_mutex_protect;
@@ -63,13 +67,13 @@ namespace ZPNetwork{
 
         //QMutex m_new_clients_mutex;
         volatile size_t m_new_clients_size;
-        std::unordered_map<qint64, boost::weak_ptr<CAsioTcpSocket>> m_new_clients;
+        WkTcpSocketContainer m_new_clients;
 
         //添加删除未创建任务节点的客户端
-        void add_new_client(const boost::shared_ptr<CAsioTcpSocket> &newClient);
+        void add_new_client(const TcpSocketPtr &newClient);
         void remove_new_client(CAsioTcpSocket *delClient);
         //添加删除客户端
-        void add_client(const boost::shared_ptr<CAsioTcpSocket> &newClient);
+        void add_client(const TcpSocketPtr &newClient);
         void remove_client(CAsioTcpSocket *delClient);
 	public slots:
         //以下槽函数必须以QueuedConnection连接

@@ -112,13 +112,8 @@ namespace ExampleServer{
 	}
 	void  st_client_table::KickDeadClients()
     {
-#ifdef USE_PROTOBUF
-        std::unordered_map<QObject *, boost::shared_ptr<CClientNode>>::iterator p;
-        std::unordered_map<QObject *, boost::shared_ptr<CClientNode>>::iterator delP;
-#else
-        std::unordered_map<QObject *, boost::shared_ptr<st_clientNode_baseTrans>>::iterator p;
-        std::unordered_map<QObject *, boost::shared_ptr<st_clientNode_baseTrans>>::iterator delP;
-#endif
+        SockNodeContainer::iterator p;
+        SockNodeContainer::iterator delP;
 
         for (p =m_hash_sock2node.begin(); p!=m_hash_sock2node.end(); )
         {
@@ -160,17 +155,9 @@ namespace ExampleServer{
 		return true;
 	}
 
-#ifdef USE_PROTOBUF
-    boost::weak_ptr<CClientNode> st_client_table::clientNodeFromUUID(quint64 uuid)
-#else
-    boost::weak_ptr<st_clientNode_baseTrans> st_client_table::clientNodeFromUUID(quint64 uuid)
-#endif
+    NodeWkPtr st_client_table::clientNodeFromUUID(quint64 uuid)
     {
-#ifdef USE_PROTOBUF
-        boost::weak_ptr<CClientNode> pNode;
-#else
-        boost::weak_ptr<st_clientNode_baseTrans> pNode;
-#endif
+        NodeWkPtr pNode;
 		if (m_hash_uuid2node.find(uuid)!=m_hash_uuid2node.end())
         {
             pNode = m_hash_uuid2node[uuid];
@@ -179,17 +166,9 @@ namespace ExampleServer{
         return pNode;
 	}
 
-#ifdef USE_PROTOBUF
-    boost::weak_ptr<CClientNode> st_client_table::clientNodeFromSocket(QObject * sock)
-#else
-    boost::weak_ptr<st_clientNode_baseTrans> st_client_table::clientNodeFromSocket(QObject * sock)
-#endif
+    NodeWkPtr st_client_table::clientNodeFromSocket(QObject * sock)
     {
-#ifdef USE_PROTOBUF
-        boost::weak_ptr<CClientNode> pNode;
-#else
-        boost::weak_ptr<st_clientNode_baseTrans> pNode;
-#endif
+        NodeWkPtr pNode;
 		if (m_hash_sock2node.find(sock)!=m_hash_sock2node.end())
         {
             pNode = m_hash_sock2node[sock];
@@ -238,7 +217,7 @@ namespace ExampleServer{
         }
 
         bool foundUuid = false;
-        boost::shared_ptr<CClientNode> pNode;
+        NodePtr pNode;
         foundUuid = m_hash_uuid2node.find(m_codec->uuid()) != m_hash_uuid2node.end();
         if(foundUuid)
         {
@@ -321,11 +300,8 @@ namespace ExampleServer{
 	void  st_client_table::on_evt_ClientDisconnected(QObject * clientHandle)
     {
 		bool nHashContains  = false;
-#ifdef USE_PROTOBUF
-        boost::shared_ptr<CClientNode> pClientNode;
-#else
-        boost::shared_ptr<st_clientNode_baseTrans> pClientNode;
-#endif
+        NodePtr pClientNode;
+
         nHashContains = (m_hash_sock2node.find(clientHandle)!=m_hash_sock2node.end())?true:false;
 		if (nHashContains)
 			pClientNode =  m_hash_sock2node[clientHandle];
@@ -368,11 +344,9 @@ namespace ExampleServer{
         {
             return;
         }
-#ifdef USE_PROTOBUF
-        boost::shared_ptr<CClientNode> pClientNode;
-#else
-        boost::shared_ptr<st_clientNode_baseTrans> pClientNode;
-#endif
+
+        NodePtr pClientNode;
+
         pClientNode =  m_hash_sock2node[clientHandle];
         //assert(nHashContains!=0 && pClientNode !=0);
 
@@ -440,11 +414,7 @@ namespace ExampleServer{
         bool bres = false;
 		if (m_hash_uuid2node.find(uuid)!=m_hash_uuid2node.end())
         {
-#ifdef USE_PROTOBUF
-            boost::shared_ptr<CClientNode> pAppLayer = m_hash_uuid2node[uuid].lock();
-#else
-            boost::shared_ptr<st_clientNode_baseTrans> pAppLayer = m_hash_uuid2node[uuid].lock();
-#endif
+            NodePtr pAppLayer = m_hash_uuid2node[uuid].lock();
 			if (pAppLayer)
 			{
 				this->m_pThreadEngine->SendDataToClient(pAppLayer->sock(),msg);

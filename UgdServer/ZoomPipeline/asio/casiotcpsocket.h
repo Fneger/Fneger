@@ -7,6 +7,7 @@
 
 class IOServiceClass;
 class CAsioTcpSocket;
+typedef boost::weak_ptr<CAsioTcpSocket> TcpSocketWkPtr;
 typedef boost::shared_ptr<CAsioTcpSocket> TcpSocketPtr;
 class CAsioTcpSocket:
         public CTcpAbstractSocket,

@@ -26,7 +26,19 @@ namespace ExampleServer{
 #ifndef USE_PROTOBUF
     class st_clientNode_baseTrans;
 #endif
-
+#ifdef USE_PROTOBUF
+    typedef  boost::weak_ptr<CClientNode> NodeWkPtr;
+    typedef  boost::shared_ptr<CClientNode> NodePtr;
+    typedef std::unordered_map<quint64, NodeWkPtr> WkUuidNodeContainer;
+    typedef std::unordered_map<quint64, NodePtr> UuidNodeContainer;
+    typedef std::unordered_map<QObject *, NodePtr> SockNodeContainer;
+#else
+    typedef  boost::weak_ptr<st_clientNode_baseTrans> NodeWkPtr;
+    typedef  boost::shared_ptr<st_clientNode_baseTrans> NodePtr;
+    typedef std::unordered_map<quint64, NodeWkPtr> WkUuidNodeContainer;
+    typedef std::unordered_map<quint64, st_clientNode_baseTrans> UuidNodeContainer;
+    typedef std::unordered_map<QObject *, st_clientNode_baseTrans> SockNodeContainer;
+#endif
 	class st_client_table : public QObject
 	{
 		Q_OBJECT
@@ -36,7 +48,7 @@ namespace ExampleServer{
 				,ZPTaskEngine::zp_pipeline * taskeng
 				,ZPDatabase::DatabaseResource *pDb
 				,ZP_Cluster::zp_ClusterTerm * pCluster
-				,QObject *parent = 0);
+                ,QObject *parent = nullptr);
 		~st_client_table();
 
 
@@ -80,12 +92,9 @@ namespace ExampleServer{
         //QMutex m_hash_mutex;
 #ifdef USE_PROTOBUF
         boost::scoped_ptr<CClientNode> m_codec;
-        std::unordered_map<quint64, boost::weak_ptr<CClientNode>> m_hash_uuid2node;
-        std::unordered_map<QObject *, boost::shared_ptr<CClientNode>> m_hash_sock2node;
-#else
-        std::unordered_map<quint64, boost::weak_ptr<st_clientNode_baseTrans>> m_hash_uuid2node;
-        std::unordered_map<QObject *, boost::shared_ptr<st_clientNode_baseTrans>> m_hash_sock2node;
 #endif
+        WkUuidNodeContainer m_hash_uuid2node;
+        SockNodeContainer m_hash_sock2node;
 
         volatile size_t m_client_nodes_size;
 
@@ -152,8 +161,8 @@ namespace ExampleServer{
         //下面函数未加互斥锁，外部不能直接调用
 #ifdef USE_PROTOBUF
         bool regisitClientUUID(CClientNode *);
-        boost::weak_ptr<CClientNode> clientNodeFromUUID(quint64);
-        boost::weak_ptr<CClientNode> clientNodeFromSocket(QObject *);
+        NodeWkPtr clientNodeFromUUID(quint64);
+        NodeWkPtr clientNodeFromSocket(QObject *);
 #else
         bool regisitClientUUID(st_clientNode_baseTrans *);
         boost::weak_ptr<st_clientNode_baseTrans> clientNodeFromUUID(quint64);

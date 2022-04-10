@@ -109,7 +109,7 @@ namespace ZPNetwork{
 		assert(m_nPayLoad>=256 && m_nPayLoad<=16*1024*1024);
     }
 
-    void zp_netTransThread::add_new_client(const boost::shared_ptr<CAsioTcpSocket> &newClient)
+    void zp_netTransThread::add_new_client(const TcpSocketPtr &newClient)
     {
         qint64 nId = (qint64)newClient.get();
         m_new_clients[nId] = newClient;
@@ -124,7 +124,7 @@ namespace ZPNetwork{
         m_new_clients_size = m_new_clients.size();
     }
 
-    void zp_netTransThread::add_client(const boost::shared_ptr<CAsioTcpSocket> &newClient)
+    void zp_netTransThread::add_client(const TcpSocketPtr &newClient)
     {
         qint64 nId = (qint64)newClient.get();
         m_clientList[nId] = newClient;
@@ -136,7 +136,7 @@ namespace ZPNetwork{
         qint64 nId = (qint64)delClient;
         if(m_clientList.find(nId) != m_clientList.end())
         {
-            boost::shared_ptr<CAsioTcpSocket> pSock = m_clientList[nId];
+            TcpSocketPtr pSock = m_clientList[nId];
             CGarbageCollector::Instance()->sockPutInTrash(pSock);
             m_clientList.erase(nId);
             m_buffer_sending.erase(delClient);
@@ -149,12 +149,12 @@ namespace ZPNetwork{
     {
         qint64 currSec = QDateTime::currentSecsSinceEpoch();
         //m_new_clients_mutex.lock();
-        if(m_new_clients.size() > 0)
+        if(!m_new_clients.empty())
         {
-            std::unordered_map<qint64, boost::weak_ptr<CAsioTcpSocket>>::iterator it;
+            WkTcpSocketContainer::iterator it;
             for (it =m_new_clients.begin(); it!=m_new_clients.end();)
             {
-                boost::shared_ptr<CAsioTcpSocket> pSock(it->second.lock());
+                TcpSocketPtr pSock(it->second.lock());
                 if(pSock)
                 {
                     if(currSec - pSock->activeTime() > S_DEAD_NEW_CLIENT_KEEP_TIME)
@@ -195,7 +195,7 @@ namespace ZPNetwork{
 		else
             sock_client =  new QAsioTcpsocket(pSession);
 #else
-        boost::shared_ptr<CAsioTcpSocket> sock_client;
+        TcpSocketPtr sock_client;
         sock_client = CGarbageCollector::Instance()->sockResumeRabish();
         if(!sock_client)
             sock_client = boost::make_shared<CAsioTcpSocket>(session);
@@ -499,7 +499,7 @@ namespace ZPNetwork{
 	{
 		if (ptr!=this)
             return;
-        std::unordered_map<qint64, boost::shared_ptr<CAsioTcpSocket>>::iterator it;
+        TcpSocketContainer::iterator it;
         for(it = m_clientList.begin(); it != m_clientList.end(); ++it)
         {
             CAsioTcpSocket * pSock = qobject_cast<CAsioTcpSocket*>((*it).second.get());
